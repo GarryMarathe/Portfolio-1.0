@@ -1,0 +1,72 @@
+/* Updated AboutSection.css */
+
+.about-section {
+    display: flex;
+    background-color: #111111;
+    color: #fff;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .about-me-text {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .about-me-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .line {
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    display: flex;
+    flex-direction: row; /* Adjust to column for smaller screens */
+    max-width: 100%; /* Ensure the content doesn't exceed the viewport */
+  }
+  
+  .left-section,
+  .right-section {
+    width: 100%; /* Occupy full width */
+  }
+  
+  .left-section img {
+    width: 100%;
+    height: 450px;
+    width: 480px; /* Ensure the image does not exceed its container */
+    border: 10px solid #fff;
+    border-radius: 50%;
+    margin-left: 200px;
+  }
+  
+  .right-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+  
+  .right-section .column-1 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .right-section .column-2 {
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .right-section .column-3 {
+    font-size: 16px;
+  }
+  
+  .right-section p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

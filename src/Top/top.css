@@ -1,0 +1,321 @@
+.background-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh; /* Set the height of the background */
+    background-color: rgba(0, 0, 0, 0.8); /* Add a dark overlay to the container */
+  }
+  
+  .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 20px;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2;
+      /* background-color: rgba(0, 0, 0, 0.5); */
+      transition: background-color 0.3s;
+  }
+
+  
+  .scrolled .navbar {
+    background-color: rgba(0, 0, 0, 0.6); /* Adjust the transparency as needed (e.g., 0.5 for more transparency) */
+    /* transition: background-color 0.3s;
+    position: fixed;
+    width: 100%;
+    z-index: 2; */
+}
+
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-left a {
+    position: relative;
+    left: 30px;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-family: 'GeneralSans-Variable';
+  }
+   
+ 
+
+   .navbar-center a {
+    position: relative;
+    text-align: left;
+    margin: 0 20px; /* Adjust margin to separate items */
+    color: white; /* Set the text color to white */
+    font-size: 20px;
+    font-family: 'GeneralSans-Variable';
+    text-decoration: none;  
+    }
+
+   .menu-icon {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .menu-icon.active .bar {
+    background-color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: background-color 0.3s;
+  }
+  
+/* Your existing CSS */
+
+.content-container {
+  display: flex;
+  justify-content: space-between; /* Use space-between to evenly divide the content */
+  align-items: center;
+  /* height: calc(100vh - 80px);  */
+  height: 100vh;
+  overflow-y: auto; /* Enable vertical scrolling */
+
+}
+
+.left {
+  display: flex;
+  flex: 0 0 80%;
+  flex-direction: column;
+  align-items: center; /* Center the content vertically within the left column */
+  flex: 1; /* Allow the left column to take up the available space */
+}
+
+/* Rest of your CSS remains the same */
+
+
+.section p {
+  margin: 20px 272px;
+  text-align: center;
+  color: white;
+  text-align: justify;
+  overflow-wrap: break-word;
+  line-height: 1.75;
+}
+
+.section-name {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.section-name h1{
+
+  font-size: 45px;
+  font-family: 'GeneralSans-Variable';
+  color: white;
+} 
+
+.section-name h1 span {
+  color: orangered;
+}
+
+.job-title-column {
+
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-left: 0;
+  font-size: 20px;
+  font-family: 'GeneralSans-Variable';
+  padding-left: 5px;
+  color: orangered;
+}
+
+.job-title-text {
+  color: white;
+  width: 30px; /* Adjust the width as needed to prevent shifting */
+  display: inline-block;
+}
+
+/* Rest of your CSS remains the same */
+
+/* Additional styling for the social links */
+.social-link {
+  display: flex;
+ flex-direction: column;
+  flex: 0 0 20%;
+  align-items: center;
+  margin-right: 100px;
+}
+
+.icon-link {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Adjust the width for the square boxes */
+  height: 50px; /* Ensure the height matches the width for a square shape */
+  background-color: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */; /* Set the background color of the boxes */
+  border-radius: 8px; /* Add rounded corners if desired */
+  text-align: center;
+  line-height: 50px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+  margin: 0 10px; /* Adjust the margin as needed */
+  transition: background-color 0.3s; 
+  color: black;
+}
+
+.icon-link:hover {
+  background-color: rgb(95, 90, 90); /* Change the background color on hover to make it less translucent */
+}
+
+.icon-svg {
+  width: 35px; /* Adjust the width and height as needed to fit the SVG icons */
+  height: 35px;
+ 
+}
+
+.icon-svgg {
+  width: 35px; /* Adjust the width and height as needed to fit the SVG icons */
+  height: 35px;
+ 
+}
+
+.icon-svgg{
+
+  filter: invert(1);
+}
+
+.link{
+  
+  display: flex;
+  flex-direction: row;
+  padding: 3vh 0;
+}
+.link .ficons{
+  display:flex;
+  /* justify-content: space-around; */
+  /* padding: 2vh 3vh; */
+  ;
+  
+}
+.social-link h3 {
+  margin: 0 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.stack{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.stack h3{
+
+  padding: 3vh 0;
+}
+
+.stack-icons{
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.stack h3 {
+  margin: 0 10px;
+  font-weight: bold;
+  color: white;
+
+}
+.link a {
+  font-size: 30px;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Your existing CSS */
+
+
+  /* Add a media query for smaller screens */
+ /* ... other CSS rules ... */
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    .navbar-right {
+      display: flex;
+      align-items: center;
+    }
+  
+    .navbar-center {
+      position: fixed;
+      top: 0;
+      right: -250px; /* Adjust the initial position to the right side */
+      width: 250px;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.6); /* Change the background color */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      transition: right 0.3s; /* Transition from the right side */
+      z-index: 1;
+    }
+  
+    .navbar-center.active {
+      right: 0; /* Slide in from the right side */
+    }
+  
+    .navbar-center a {
+        text-align: left;
+        margin: 10px 20px; /* Adjust margin to separate items */
+        color: black; /* Set the text color to white */
+        font-size: 20px;
+        font-family: 'GeneralSans-Variable';
+        text-decoration: none;
+      }
+    .navbar-center .close-icon {
+      display: block;
+      text-align: right;
+      margin: 20px 20px 0; /* Adjust margin for the close button */
+      cursor: pointer;
+      color: black; /* Change the text color to white */
+      font-size: 58px;
+    }
+  }
+  
+  /* ... other CSS rules ... */
+  
+  
+  /* Hide the close button for wider screens */
+  @media (min-width: 769px) {
+    .navbar-center .close-icon {
+      display: none;
+    }
+  }
+  
