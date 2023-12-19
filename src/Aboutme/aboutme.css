@@ -65,6 +65,68 @@
     font-size: 16px;
   }
   
+  .boxes-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.box {
+  flex: 1;
+  padding: 60px;
+  margin-right: 40px; /* Add margin to create space between boxes */
+  border: 2px solid #fff;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+.box:hover {
+    color: orangered;
+}
+
+.download-button {
+  
+  margin-top: 40px;
+  text-align: start;
+}
+
+.download-button button{
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+
+}
+
+.download-button button img {
+  padding-left: 30px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  width: 45%;
+    
+
+}
+
+.download-button button {
+  background-color: orangered;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-align: center;
+}
+
+
+
+.download-button button:hover {
+  background-color: #ff6600; /* Darker shade of orange on hover */
+}
+
   .right-section p {
     font-size: 16px;
     line-height: 1.6;

@@ -34,6 +34,19 @@ const AboutSection = () => {
                       </p>
                       
                   </div>
+                  <div className="boxes-container">
+                        <div className="box">Box 1 Text</div>
+                        <div className="box">Box 2 Text</div>
+                        <div className="box">Box 3 Text</div>
+                    </div>
+
+                    <div className="download-button">
+                    
+                        <button>
+                         <img src="/icons/file.png" alt="download" />
+                            Download
+                        </button>
+                    </div>
               </div>
           </div>
       </div>
