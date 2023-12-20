@@ -15,7 +15,7 @@
   }
   
   .about-me-text h1 {
-    font-size: 36px;
+    font-size: 42px;
     margin-bottom: 10px;
   }
   
@@ -40,9 +40,9 @@
     width: 100%;
     height: 450px;
     width: 480px; /* Ensure the image does not exceed its container */
-    border: 10px solid #fff;
+    border: 7px solid #fff;
     border-radius: 50%;
-    margin-left: 200px;
+    margin-left: 150px;
   }
   
   .right-section {
@@ -55,6 +55,11 @@
     font-size: 18px;
     font-weight: bold;
   }
+
+  .column-1 h2 span {
+
+    color: orangered;
+  }
   
   .right-section .column-2 {
     font-size: 20px;
@@ -63,6 +68,10 @@
   
   .right-section .column-3 {
     font-size: 16px;
+    padding-right: 40px;
+    text-align: start;
+    margin-bottom: 20px;
+
   }
   
   .boxes-container {
@@ -71,59 +80,82 @@
     margin-top: 20px;
 }
 
-.box {
-  flex: 1;
-  padding: 60px;
-  margin-right: 40px; /* Add margin to create space between boxes */
-  border: 2px solid #fff;
-  border-radius: 5px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
+.box-1 {
+    flex: 1;
+    padding: 10px;
+    margin-right: 60px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.box:hover {
+
+.box-1 h3 {
+  margin: 0; /* Remove margin for h3 element */
+  padding-top: 5px;
+}
+
+.box-1 p {
+  margin: 5px 0;
+}
+
+.box-1 img {
+  width: 50px; /* Adjust the width of the icon */
+}
+
+.box-1:hover {
     color: orangered;
 }
 
-.download-button {
-  
-  margin-top: 40px;
-  text-align: start;
-}
 
-.download-button button{
-
+.box-3 button {
+  background-color: orangered;
+  color: #fff;
+  margin-right: 30px;
+  padding: 0px 35px;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   display: flex;
   flex-direction: column;
   text-align: center;
 
-
+ 
 }
 
-.download-button button img {
-  padding-left: 30px;
+.box-3 button img {
+  padding-top: 15px;
+  padding-left: 35px;
   padding-right: 5px;
-  padding-bottom: 5px;
-  width: 45%;
+  width: 38%;
+  align-items: center;
     
 
 }
 
-.download-button button {
-  background-color: orangered;
-  color: #fff;
-  padding: 10px 40px;
-  border: none;
-  border-radius: 5px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  text-align: center;
+.box-3 button h4{
+
+  margin: 0;
+  padding-top: 18px;
+  padding-left: 10px;
+  align-items: center;
+}
+
+.box-3 button p {
+  margin: 0;
+  padding-top: 2px;
+  padding-left: 13px;
+  padding-bottom: 15px;
 }
 
 
-
-.download-button button:hover {
+.box-3 button:hover {
   background-color: #ff6600; /* Darker shade of orange on hover */
 }
 
