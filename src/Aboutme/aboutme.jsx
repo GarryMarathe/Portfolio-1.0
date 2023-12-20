@@ -46,13 +46,12 @@ const AboutSection = () => {
                         <div className="box-3">
 
                         <a href="/resumes/resume.pdf" download>
-                         <button>
-                         
+                        
                          <img src="/icons/file.png" alt="download" />
-                           <h4>Resume</h4> 
+                           <h3>Resume</h3> 
                            <p>Download</p>
 
-                        </button>
+                         
                         </ a>
             
 

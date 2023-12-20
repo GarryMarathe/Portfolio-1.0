@@ -80,10 +80,13 @@
     margin-top: 20px;
 }
 
-.box-1 {
+.box-1,
+.box-3 {
     flex: 1;
-    padding: 10px;
-    margin-right: 60px;
+    padding: 10px 30px;
+    margin: 20px;
+    margin-left: 5px;
+    margin-right: 20px;
     border: 2px solid #fff;
     border-radius: 15px;
     text-align: center;
@@ -94,12 +97,14 @@
     align-items: center;
 }
 
-.box-1 h3 {
+.box-1 h3,
+.box-3 h3 {
   margin: 0; /* Remove margin for h3 element */
   padding-top: 5px;
 }
 
-.box-1 p {
+.box-1 p,
+.box-3 p {
   margin: 5px 0;
 }
 
@@ -107,13 +112,34 @@
   width: 50px; /* Adjust the width of the icon */
 }
 
-.box-1:hover {
+.box-3 img{
+  padding-top: 5px;
+  width: 40px;
+}
+
+.box-1:hover{
     color: orangered;
 }
 
+.box-3 a {
+    text-decoration: none; /* Remove the default underline on links */
+    color: inherit; /* Inherit the color from the parent (box-3) */
+}
 
-.box-3 button {
-  background-color: orangered;
+.box-3 a:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.box-3:hover,
+.box-3:hover a,
+.box-3:hover img,
+.box-3:hover h3,
+.box-3:hover p {
+    color: orangered;
+}
+
+/* .box-3 button {
+  
   color: #fff;
   margin-right: 30px;
   padding: 0px 35px;
@@ -127,9 +153,10 @@
   text-align: center;
 
  
-}
+} */
 
-.box-3 button img {
+
+/* .box-3 button img {
   padding-top: 15px;
   padding-left: 35px;
   padding-right: 5px;
@@ -139,7 +166,7 @@
 
 }
 
-.box-3 button h4{
+.box-3 button h3{
 
   margin: 0;
   padding-top: 18px;
@@ -152,12 +179,8 @@
   padding-top: 2px;
   padding-left: 13px;
   padding-bottom: 15px;
-}
+} */
 
-
-.box-3 button:hover {
-  background-color: #ff6600; /* Darker shade of orange on hover */
-}
 
   .right-section p {
     font-size: 16px;
@@ -171,4 +194,36 @@
 
 .box-3 a:hover {
     color: #fff; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .content-section {
+    flex-direction: column; /* Change to a column layout for smaller screens */
+  }
+
+  .left-section img {
+    margin-left: 0; /* Remove left margin for the image on smaller screens */
+  }
+
+  .right-section {
+    margin-left: 0; /* Remove left margin for the right section on smaller screens */
+  }
+
+  .boxes-container {
+    flex-direction: column; /* Stack the boxes vertically for smaller screens */
+    margin-top: 10px; /* Adjust top margin for smaller screens */
+  }
+
+  .box-1 {
+    margin-right: 0; /* Remove right margin for the boxes on smaller screens */
+    margin-bottom: 10px; /* Add bottom margin between boxes for smaller screens */
+  }
+
+  .box-3 button {
+    margin-right: 0; /* Remove right margin for the button on smaller screens */
+  }
 }
