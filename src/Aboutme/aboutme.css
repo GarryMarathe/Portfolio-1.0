@@ -30,7 +30,6 @@
     display: flex;
     flex-direction: row; /* Adjust to column for smaller screens */
     max-width: 100%; /* Ensure the content doesn't exceed the viewport */
-    overflow-x: hidden;
   }
   
   .left-section,
@@ -45,15 +44,13 @@
     width: 480px; /* Ensure the image does not exceed its container */
     border: 7px solid #fff;
     border-radius: 50%;
-    margin-left: 150px;
+    margin-left: 120px;
   }
   
   .right-section {
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-    margin-top: 20px;
-    overflow-x: hidden; /* Hide horizontal overflow */
   }
   
   .right-section .column-1 {
@@ -81,10 +78,8 @@
   
   .boxes-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
-    overflow-x: hidden;
 }
 
 .box-1,
@@ -170,7 +165,10 @@
   }
 
   .left-section img {
-    margin-left: 0; /* Remove left margin for the image on smaller screens */
+    margin-left: -5px;
+    width: 50%;
+    max-width: 90%;
+    height: auto;
   }
 
   .right-section {
@@ -187,5 +185,13 @@
     margin-right: 0; /* Remove right margin for the boxes on smaller screens */
     margin-bottom: 10px; /* Add bottom margin between boxes for smaller screens */
   }
+}
+  @media (max-width: 480px) {
+    .left-section img {
+        /* Add specific styles for screens with a maximum width of 480px */
+        width: 100%; /* Adjust width to fit the viewport */
+        max-width: 100%; /* Ensure the image does not exceed its container */
+        height: auto; /* Maintain aspect ratio */
+    }
 
 }
