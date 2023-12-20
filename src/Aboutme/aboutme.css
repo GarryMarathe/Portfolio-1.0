@@ -164,3 +164,11 @@
     line-height: 1.6;
   }
   
+  .box-3 a {
+    text-decoration: none; /* Remove the default underline on links */
+    color: inherit; /* Inherit the color from the parent (button) */
+}
+
+.box-3 a:hover {
+    color: #fff; /* Change color on hover */
+}
