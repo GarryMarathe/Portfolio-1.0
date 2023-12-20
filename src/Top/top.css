@@ -255,62 +255,91 @@
 }
 
 
-/* Your existing CSS */
-
-
-  /* Add a media query for smaller screens */
- /* ... other CSS rules ... */
-
 /* Add a media query for smaller screens */
 @media (max-width: 768px) {
-    .menu-icon {
-      display: block;
-      margin-right: 20px;
-    }
-  
-    .navbar-right {
-      display: flex;
-      align-items: center;
-    }
-  
-    .navbar-center {
-      position: fixed;
-      top: 0;
-      right: -250px; /* Adjust the initial position to the right side */
-      width: 250px;
-      height: 100%;
-      background-color: rgba(255, 255, 255, 0.6); /* Change the background color */
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      transition: right 0.3s; /* Transition from the right side */
-      z-index: 1;
-    }
-  
-    .navbar-center.active {
-      right: 0; /* Slide in from the right side */
-    }
-  
-    .navbar-center a {
-        text-align: left;
-        margin: 10px 20px; /* Adjust margin to separate items */
-        color: black; /* Set the text color to white */
-        font-size: 20px;
-        font-family: 'GeneralSans-Variable';
-        text-decoration: none;
-      }
-    .navbar-center .close-icon {
-      display: block;
-      text-align: right;
-      margin: 20px 20px 0; /* Adjust margin for the close button */
-      cursor: pointer;
-      color: black; /* Change the text color to white */
-      font-size: 58px;
-    }
+  .menu-icon {
+    display: block;
+    margin-right: 20px;
   }
-  
-  /* ... other CSS rules ... */
-  
+
+  .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-center {
+    position: fixed;
+    top: 0;
+    right: -250px; /* Adjust the initial position to the right side */
+    width: 250px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* Change the background color */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: right 0.3s; /* Transition from the right side */
+    z-index: 1;
+  }
+
+  .navbar-center.active {
+    right: 0; /* Slide in from the right side */
+  }
+
+  .navbar-center a {
+    text-align: left;
+    margin: 10px 20px; /* Adjust margin to separate items */
+    color: black; /* Set the text color to white */
+    font-size: 20px;
+    font-family: 'GeneralSans-Variable';
+    text-decoration: none;
+  }
+
+  .navbar-center .close-icon {
+    display: block;
+    text-align: right;
+    margin: 20px 20px 0; /* Adjust margin for the close button */
+    cursor: pointer;
+    color: black; /* Change the text color to white */
+    font-size: 58px;
+  }
+
+  .content-container {
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left {
+
+    text-align: center; /* Center the content in the left column */
+    width: 100%; /* Occupy full width in responsive view */
+    margin: 20px 0; /* Add some margin for spacing */
+  }
+
+  .section-name,
+  .job-title-column {
+    width: 100%; /* Make the section name and job title column take full width */
+  }
+
+  .section p {
+    margin: 20px 20px; /* Adjust the margin for smaller screens */
+  }
+
+  .social-link {
+    margin-right: 20px; /* Adjust the margin for smaller screens */
+    margin-top: 20px; /* Add margin at the top for spacing */
+  }
+
+  .stack-icons {
+    flex-direction: row; /* Stack the icons vertically for smaller screens */
+  }
+
+  .stack-icons .icon-link {
+    margin-bottom: 10px; /* Add some space between stack icons */
+  }
+}
+
   
   /* Hide the close button for wider screens */
   @media (min-width: 769px) {
