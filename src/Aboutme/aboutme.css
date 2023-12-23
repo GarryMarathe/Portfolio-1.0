@@ -1,107 +1,112 @@
 /* Updated AboutSection.css */
 
 .about-section {
-    display: flex;
-    background-color: #111111;
-    color: #fff;
-    padding: 20px;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-  }
-  
-  .about-me-text {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .about-me-text h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-  }
-  
-  .line {
-    width: 100%;
-    border: 1px solid #fff;
-    margin-bottom: 20px;
-  }
-  
-  .content-section {
-    display: flex;
-    flex-direction: row; /* Adjust to column for smaller screens */
-    max-width: 100%; /* Ensure the content doesn't exceed the viewport */
-  }
-  
-  .left-section,
-  .right-section {
-    width: 100%; /* Occupy full width */
-    overflow-x: hidden;
-  }
-  
-  .left-section img {
-    width: 100%;
-    height: 450px;
-    width: 480px; /* Ensure the image does not exceed its container */
-    border: 7px solid #fff;
-    border-radius: 50%;
-    margin-left: 120px;
-  }
-  
-  .right-section {
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-  }
-  
-  .right-section .column-1 {
-    font-size: 18px;
-    font-weight: bold;
-  }
+  display: flex;
+  background-color: #111111;
+  color: #fff;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
 
-  .column-1 h2 span {
+.about-me-text {
+  text-align: center;
+  padding: 20px 0;
+}
 
-    color: orangered;
-  }
-  
-  .right-section .column-2 {
-    font-size: 20px;
-    font-weight: lighter;
-  }
-  
-  .right-section .column-3 {
-    font-size: 16px;
-    padding-right: 40px;
-    text-align: start;
-    margin-bottom: 20px;
+.about-me-text h1 {
+  font-size: 42px;
+  margin-bottom: 10px;
+}
 
-  }
-  
-  .boxes-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+.line {
+  width: 100%;
+  border: 1px solid #fff;
+  margin-bottom: 20px;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: row;
+  /* Adjust to column for smaller screens */
+  max-width: 100%;
+  /* Ensure the content doesn't exceed the viewport */
+}
+
+.left-section,
+.right-section {
+  width: 100%;
+  /* Occupy full width */
+  overflow-x: hidden;
+}
+
+.left-section img {
+  width: 100%;
+  height: 450px;
+  width: 480px;
+  /* Ensure the image does not exceed its container */
+  border: 7px solid #fff;
+  border-radius: 50%;
+  margin-left: 120px;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}
+
+.right-section .column-1 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.column-1 h2 span {
+
+  color: orangered;
+}
+
+.right-section .column-2 {
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.right-section .column-3 {
+  font-size: 16px;
+  padding-right: 40px;
+  text-align: start;
+  margin-bottom: 20px;
+
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .box-1,
 .box-3 {
-    flex: 1;
-    padding: 10px 30px;
-    margin: 20px;
-    margin-left: 5px;
-    margin-right: 20px;
-    border: 2px solid #fff;
-    border-radius: 15px;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  padding: 10px 30px;
+  margin: 20px;
+  margin-left: 5px;
+  margin-right: 20px;
+  border: 2px solid #fff;
+  border-radius: 15px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .box-1 h3,
 .box-3 h3 {
-  margin: 0; /* Remove margin for h3 element */
+  margin: 0;
+  /* Remove margin for h3 element */
   padding-top: 5px;
 }
 
@@ -111,25 +116,29 @@
 }
 
 .box-1 img {
-  width: 50px; /* Adjust the width of the icon */
+  width: 50px;
+  /* Adjust the width of the icon */
 }
 
-.box-3 img{
+.box-3 img {
   padding-top: 5px;
   width: 40px;
 }
 
-.box-1:hover{
-    color: orangered;
+.box-1:hover {
+  color: orangered;
 }
 
 .box-3 a {
-    text-decoration: none; /* Remove the default underline on links */
-    color: inherit; /* Inherit the color from the parent (box-3) */
+  text-decoration: none;
+  /* Remove the default underline on links */
+  color: inherit;
+  /* Inherit the color from the parent (box-3) */
 }
 
 .box-3 a:hover {
-    color: #fff; /* Change color on hover */
+  color: #fff;
+  /* Change color on hover */
 }
 
 .box-3:hover,
@@ -137,31 +146,36 @@
 .box-3:hover img,
 .box-3:hover h3,
 .box-3:hover p {
-    color: orangered;
+  color: orangered;
 }
 
 
-  .right-section p {
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  .box-3 a {
-    text-decoration: none; /* Remove the default underline on links */
-    color: inherit; /* Inherit the color from the parent (button) */
+.right-section p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.box-3 a {
+  text-decoration: none;
+  /* Remove the default underline on links */
+  color: inherit;
+  /* Inherit the color from the parent (button) */
 }
 
 .box-3 a:hover {
-    color: #fff; /* Change color on hover */
+  color: #fff;
+  /* Change color on hover */
 }
 
 @media (max-width: 768px) {
   .about-section {
-    padding: 10px; /* Adjust padding for smaller screens */
+    padding: 10px;
+    /* Adjust padding for smaller screens */
   }
 
   .content-section {
-    flex-direction: column; /* Change to a column layout for smaller screens */
+    flex-direction: column;
+    /* Change to a column layout for smaller screens */
   }
 
   .left-section img {
@@ -172,26 +186,35 @@
   }
 
   .right-section {
-    margin-left: 0; /* Remove left margin for the right section on smaller screens */
+    margin-left: 0;
+    /* Remove left margin for the right section on smaller screens */
   }
 
   .boxes-container {
-    flex-direction: column; /* Stack the boxes vertically for smaller screens */
-    margin-top: 10px; /* Adjust top margin for smaller screens */
+    flex-direction: column;
+    /* Stack the boxes vertically for smaller screens */
+    margin-top: 10px;
+    /* Adjust top margin for smaller screens */
   }
 
   .box-1,
   .box-3 {
-    margin-right: 0; /* Remove right margin for the boxes on smaller screens */
-    margin-bottom: 10px; /* Add bottom margin between boxes for smaller screens */
+    margin-right: 0;
+    /* Remove right margin for the boxes on smaller screens */
+    margin-bottom: 10px;
+    /* Add bottom margin between boxes for smaller screens */
   }
 }
-  @media (max-width: 480px) {
-    .left-section img {
-        /* Add specific styles for screens with a maximum width of 480px */
-        width: 100%; /* Adjust width to fit the viewport */
-        max-width: 100%; /* Ensure the image does not exceed its container */
-        height: auto; /* Maintain aspect ratio */
-    }
+
+@media (max-width: 480px) {
+  .left-section img {
+    /* Add specific styles for screens with a maximum width of 480px */
+    width: 100%;
+    /* Adjust width to fit the viewport */
+    max-width: 100%;
+    /* Ensure the image does not exceed its container */
+    height: auto;
+    /* Maintain aspect ratio */
+  }
 
 }
