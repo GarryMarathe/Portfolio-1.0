@@ -65,11 +65,22 @@
     box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373); /* Add a box-shadow for a 3D effect */
     border-radius: 20px;
     transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
+    overflow: hidden; /* Hide any overflow to prevent content spillover */
+
+  img {
+    transition: transform 0.3s; /* Add a transition for smooth movement */
+  }
+
+  p {
+    transition: transform 0.3s; /* Add a transition for smooth movement */
+  }
+
+  /* Hover effect */
+  &:hover img, &:hover p {
+    transform: translateY(-20px); /* Slide only the skill info (logo and text) upward on hover */
+  }
   
-    /* Hover effect */
-    &:hover {
-        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.4);
-      }
+    
   }
   
   .skill-item img {
