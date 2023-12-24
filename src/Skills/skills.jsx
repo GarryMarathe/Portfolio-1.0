@@ -8,7 +8,7 @@ import './skills.css';
 const Skills = () => {
   // Define constants for page navigation
   const PAGE_TECHNICAL = 'technical';
-  const PAGE_NON_TECHNICAL = 'nonTechnical';
+  const PAGE_LANGUAGES = 'languages';
   const PAGE_TOOLS = 'tools';
 
   // State variables for the current page and skill lists
@@ -28,16 +28,13 @@ const Skills = () => {
     { name: 'ReactJS', logoPath: '/logos/reactjs.png' },
     { name: 'NodeJS', logoPath: '/logos/nodejs.png' },
     { name: 'Flask', logoPath: '/logos/flask.png' },
-    { name: 'C++', logoPath: '/logos/cpp.png' },
-    { name: 'Python', logoPath: '/logos/python.png' },
-    { name: 'MySQL', logoPath: '/logos/mysql.png' },
     { name: 'MongoDB', logoPath: '/logos/mongodb1.png' },
   ];
 
-  const nonTechnicalSkills = [
-    { name: 'Communication', logoPath: '/logos/communication-logo.png' },
-    { name: 'Teamwork', logoPath: '/logos/teamwork-logo.png' },
-    { name: 'Problem Solving', logoPath: '/logos/problem-solving-logo.png' },
+  const languages = [
+    { name: 'C++', logoPath: '/logos/cpp.png' },
+    { name: 'Python', logoPath: '/logos/python.png' },
+    { name: 'MySQL', logoPath: '/logos/mysql.png' },
   ];
 
   const tools = [
@@ -75,8 +72,8 @@ const Skills = () => {
         <button onClick={() => navigateTo(PAGE_TECHNICAL)} className={`page ${page === PAGE_TECHNICAL ? 'selected' : ''}`}>
           Technical Skills
         </button>
-        <button onClick={() => navigateTo(PAGE_NON_TECHNICAL)} className={`page ${page === PAGE_NON_TECHNICAL ? 'selected' : ''}`}>
-          Non-Technical Skills
+        <button onClick={() => navigateTo(PAGE_LANGUAGES)} className={`page ${page === PAGE_LANGUAGES ? 'selected' : ''}`}>
+          Languages
         </button>
         <button onClick={() => navigateTo(PAGE_TOOLS)} className={`page ${page === PAGE_TOOLS ? 'selected' : ''}`}>
           Tools
@@ -87,7 +84,7 @@ const Skills = () => {
       <div className="skills-content">
         {/* Render skills based on the current page */}
         {page === PAGE_TECHNICAL && renderSkills(technicalSkills)}
-        {page === PAGE_NON_TECHNICAL && renderSkills(nonTechnicalSkills)}
+        {page === PAGE_LANGUAGES && renderSkills(languages)}
         {page === PAGE_TOOLS && renderSkills(tools)}
       </div>
     </div>
