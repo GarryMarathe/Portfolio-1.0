@@ -24,17 +24,18 @@ const Skills = () => {
     { name: 'HTML', logoPath: '/logos/html5.png' },
     { name: 'CSS', logoPath: '/logos/css3.png' },
     { name: 'Bootstrap', logoPath: '/logos/bootstrap.png' },
-    { name: 'JavaScript', logoPath: '/logos/javascript.png' },
     { name: 'ReactJS', logoPath: '/logos/reactjs.png' },
     { name: 'NodeJS', logoPath: '/logos/nodejs.png' },
     { name: 'Flask', logoPath: '/logos/flask.png' },
+    { name: 'MySQL', logoPath: '/logos/mysql.png' },
     { name: 'MongoDB', logoPath: '/logos/mongodb1.png' },
   ];
 
   const languages = [
     { name: 'C++', logoPath: '/logos/cpp.png' },
     { name: 'Python', logoPath: '/logos/python.png' },
-    { name: 'MySQL', logoPath: '/logos/mysql.png' },
+    { name: 'JavaScript', logoPath: '/logos/javascript.png' },
+    
   ];
 
   const tools = [
