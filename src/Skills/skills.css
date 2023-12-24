@@ -53,17 +53,23 @@
   }
   
   .skill-item {
-    padding:  0px 20px;
-    margin:  25px;
-    border: 2px solid #fff;
-    border-radius: 8px;
+    padding: 5px 20px;
+    margin: 20px 25px;
+    background-color: #222222; /* Background color for the cards */
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 200px;
-    height: 250px; /* Set a fixed height for each skill card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 220px; /* Set a fixed height for each skill card */
+    box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373); /* Add a box-shadow for a 3D effect */
+    border-radius: 20px;
+    transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
+  
+    /* Hover effect */
+    &:hover {
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.1), 0 0 0 2px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.4);
+      }
   }
   
   .skill-item img {
@@ -71,14 +77,16 @@
     height: 60%; /* Adjust the height as needed */
     object-fit: contain; /* or object-fit: cover; depending on your preference */
     margin-bottom: 0px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     
   }
 
   .skill-item p {
 
-    font-size: 20px;
-    margin-top: 5px ;
+    font-size: 25px;
+    font-family: "josefin sans", sans-serif;
+    margin-top: 10px ;
+    margin-bottom: 0px;
   }
   
