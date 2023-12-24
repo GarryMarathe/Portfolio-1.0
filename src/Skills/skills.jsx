@@ -40,7 +40,7 @@ const Skills = () => {
 
   const tools = [
     { name: 'Git VCS', logoPath: '/logos/git.png' },
-    { name: 'GitHub', logoPath: '/logos/github.png' },
+    { name: 'GitHub', logoPath: '/logos/github2.png' },
     { name: 'Canva', logoPath: '/logos/canva.png' },
     { name: 'Figma', logoPath: '/logos/figma.png' },
     { name: 'Firebase', logoPath: '/logos/firebase.png' },
