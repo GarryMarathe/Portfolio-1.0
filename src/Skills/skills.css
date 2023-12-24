@@ -66,17 +66,19 @@
     border-radius: 20px;
     transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
     overflow: hidden; /* Hide any overflow to prevent content spillover */
+    cursor: pointer;
 
   img {
-    transition: transform 0.3s; /* Add a transition for smooth movement */
+    transition: transform 0.5s; /* Add a transition for smooth movement */
   }
 
   p {
-    transition: transform 0.3s; /* Add a transition for smooth movement */
+    transition: transform 0.5s; /* Add a transition for smooth movement */
   }
 
   /* Hover effect */
   &:hover img, &:hover p {
+    color: orangered;
     transform: translateY(-20px); /* Slide only the skill info (logo and text) upward on hover */
   }
   
