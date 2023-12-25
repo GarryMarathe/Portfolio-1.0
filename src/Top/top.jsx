@@ -11,6 +11,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 const Top = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const jobTitleRef = useRef(null); // Reference for the job title element
 
   useEffect(() => {
@@ -26,6 +27,21 @@ const Top = () => {
       // startDelay: 500, 
     });
 
+       // Add event listener to track scroll position
+       const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+
    }, []);
 
   const toggleMenu = () => {
@@ -35,7 +51,7 @@ const Top = () => {
 
 
   return (
-    <div className="background-container">
+    <div className={`background-container ${isScrolled ? 'scrolled' : ''}`}>
       <img src={backgroundImage} alt="Background" className="background-image" />
       <nav className="navbar">
         <div className="navbar-left">
