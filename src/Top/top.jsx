@@ -15,16 +15,6 @@ const Top = () => {
 
   useEffect(() => {
 
-    const handleScroll = () => {
-      const navbar = document.querySelector('.navbar');
-      if (window.scrollY > 100) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    };
-    window.addEventListener('scroll', handleScroll);
-
     // Initialize iTyped for the job title
     init(jobTitleRef.current, {
       showCursor: true,
@@ -36,11 +26,7 @@ const Top = () => {
       // startDelay: 500, 
     });
 
-    return () => {
-      // Remove the scroll event listener when the component unmounts
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
+   }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
