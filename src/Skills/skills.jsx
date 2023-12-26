@@ -66,6 +66,7 @@ const Skills = () => {
       <div className="skills-header">
         <FontAwesomeIcon icon={faCogs} size="3x" className="skills-icon" />
         <h1>Skills & <span>Abilities</span></h1>
+       
       </div>
 
       {/* Page navigation buttons */}
