@@ -26,7 +26,7 @@ const Skills = () => {
     { name: 'Bootstrap', logoPath: '/logos/bootstrap.png' },
     { name: 'ReactJS', logoPath: '/logos/reactjs.png' },
     { name: 'NodeJS', logoPath: '/logos/nodejs.png' },
-    { name: 'Flask', logoPath: '/logos/flask.png' },
+    { name: 'Flask', logoPath: '/logos/flask.png', isWhite: true },
     { name: 'MySQL', logoPath: '/logos/mysql.png' },
     { name: 'MongoDB', logoPath: '/logos/mongodb1.png' },
   ];
@@ -53,7 +53,10 @@ const Skills = () => {
     <div className="skills-list">
       {skills.map((skill, index) => (
         <div key={index} className="skill-item">
-          <img src={process.env.PUBLIC_URL + skill.logoPath} alt={skill.name} />
+          <img src={process.env.PUBLIC_URL + skill.logoPath} alt={skill.name}
+          className={skill.isWhite ? 'white-logo' : ''} // Add a class for white logos
+          />
+          
           <p>{skill.name}</p>
         </div>
       ))}

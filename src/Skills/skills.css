@@ -112,6 +112,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     
+    
   }
 
   .skill-item p {
@@ -122,3 +123,6 @@
     margin-bottom: 0px;
   }
   
+  .white-logo {
+    filter: invert(1); /* Invert colors for the white logo */
+  }
