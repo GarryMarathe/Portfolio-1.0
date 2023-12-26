@@ -10,7 +10,7 @@
   .scrolled .navbar {
 
     
-    background-color: rgba(138, 135, 135, 0.8);
+    background-color: rgba(138, 135, 135, 0.9);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s, box-shadow 0.3s;
     padding: 15px;

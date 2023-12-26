@@ -19,9 +19,9 @@ const Top = () => {
     // Initialize iTyped for the job title
     init(jobTitleRef.current, {
       showCursor: true,
-      strings: ['Web Developer', 'Designer', 'Data Analyst'],
-      typeSpeed: 80,
-      backSpeed: 60,
+      strings: ['Web Developer', 'Data Analyst'],
+      typeSpeed: 200,
+      backSpeed: 120,
       backDelay: 1500,
 
       // startDelay: 500, 
