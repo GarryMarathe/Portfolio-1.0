@@ -1,117 +1,106 @@
+/* top.css */
+
 .background-container {
-    position: relative;
-    /* overflow: hidden; */
-    width: 100%;
-    height: 100vh; /* Set the height of the background */
-    background-color: rgba(0, 0, 0, 0.8); /* Add a dark overlay to the container */
-    transition: background-color 0.3s;
-  }
-  
-  .scrolled .navbar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: background-color 0.3s;
+}
 
-    
-    background-color: rgba(138, 135, 135, 0.9);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s, box-shadow 0.3s;
-    padding: 15px;
-    height: 30px;
-  }
+.scrolled .navbar {
+  background-color: rgba(138, 135, 135, 0.9);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 15px;
+  height: 30px;
+}
 
-  .background-image {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
-  
-  .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 20px;
-      color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: 2;
-      transition: background-color 0.3s; /* Add transition for smooth effect */
-  }
+.background-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
 
-   
-  .navbar-left {
-    display: flex;
-    align-items: center;
-  }
-  
-  .navbar-left a {
-    position: relative;
-    left: 30px;
-    font-size: 28px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    font-family: 'GeneralSans-Variable';
-  }
-   
- 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
 
-   .navbar-center a {
-    position: relative;
-    text-align: left;
-    margin: 0 20px; /* Adjust margin to separate items */
-    color: white; /* Set the text color to white */
-    font-size: 20px;
-    font-family: 'GeneralSans-Variable';
-    text-decoration: none;  
-    }
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
 
-    .navbar-center a:hover {
-      color: orangered;
-    }
+.navbar-left a {
+  position: relative;
+  left: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-family: 'GeneralSans-Variable';
+}
 
-   .menu-icon {
-    display: none;
-    cursor: pointer;
-  }
-  
-  .menu-icon.active .bar {
-    background-color: white;
-    transition: background-color 0.3s;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    transition: background-color 0.3s;
-  }
-  
-/* Your existing CSS */
+.navbar-center a {
+  position: relative;
+  text-align: left;
+  margin: 0 20px;
+  color: white;
+  font-size: 20px;
+  font-family: 'GeneralSans-Variable';
+  text-decoration: none;
+}
+
+.navbar-center a:hover {
+  color: orangered;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon.active .bar {
+  background-color: white;
+  transition: background-color 0.3s;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: background-color 0.3s;
+}
 
 .content-container {
   display: flex;
-  justify-content: space-between; /* Use space-between to evenly divide the content */
+  justify-content: space-between;
   align-items: center;
-  /* height: calc(100vh - 80px);  */
   height: 100vh;
-  overflow-y: auto; /* Enable vertical scrolling */
-
+  overflow-y: auto;
 }
 
 .left {
   display: flex;
   flex: 0 0 80%;
   flex-direction: column;
-  align-items: center; /* Center the content vertically within the left column */
-  flex: 1; /* Allow the left column to take up the available space */
+  align-items: center;
+  flex: 1;
 }
-
-/* Rest of your CSS remains the same */
-
 
 .section p {
   margin: 20px 272px;
@@ -128,19 +117,17 @@
   width: 50%;
 }
 
-.section-name h1{
-
+.section-name h1 {
   font-size: 45px;
   font-family: 'GeneralSans-Variable';
   color: white;
-} 
+}
 
 .section-name h1 span {
   color: orangered;
 }
 
 .job-title-column {
-
   display: inline-block;
   vertical-align: top;
   width: 50%;
@@ -153,112 +140,87 @@
 
 .job-title-text {
   color: white;
-  width: 30px; /* Adjust the width as needed to prevent shifting */
+  width: 30px;
   display: inline-block;
 }
 
-/* Rest of your CSS remains the same */
-
-/* Additional styling for the social links */
 .social-link {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   flex: 0 0 20%;
   align-items: center;
   margin-right: 100px;
 }
 
 .icon-link {
-
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px; /* Adjust the width for the square boxes */
-  height: 50px; /* Ensure the height matches the width for a square shape */
-  background-color: rgba(255, 255, 255, 0.2); /* Set the background color with transparency */; /* Set the background color of the boxes */
-  border-radius: 8px; /* Add rounded corners if desired */
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
   text-align: center;
   line-height: 50px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
-  margin: 0 10px; /* Adjust the margin as needed */
-  transition: background-color 0.3s; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 0 10px;
+  transition: background-color 0.3s;
   color: black;
 }
 
 .icon-link:hover {
-  background-color: rgb(95, 90, 90); /* Change the background color on hover to make it less translucent */
+  background-color: rgb(95, 90, 90);
 }
 
-.icon-svg {
-  width: 35px; /* Adjust the width and height as needed to fit the SVG icons */
+.icon-svg,
+.icon-svgg {
+  width: 35px;
   height: 35px;
- 
 }
 
 .icon-svgg {
-  width: 35px; /* Adjust the width and height as needed to fit the SVG icons */
-  height: 35px;
- 
-}
-
-.icon-svgg{
-
   filter: invert(1);
 }
 
-.link{
-  
+.link {
   display: flex;
   flex-direction: row;
   padding: 3vh 0;
 }
-.link .ficons{
-  display:flex;
-  /* justify-content: space-around; */
-  /* padding: 2vh 3vh; */
-  ;
-  
+
+.link .ficons {
+  display: flex;
 }
-.social-link h3 {
+
+.social-link h3,
+.stack h3{
   margin: 0 10px;
   font-weight: bold;
   color: white;
 }
 
-.stack{
+.link a{
+  font-size: 30px;
+  margin: 0 10px;
+  font-weight: bold;
+  color: white;
+}
 
+.stack {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
-.stack h3{
-
-  padding: 3vh 0;
-}
-
-.stack-icons{
-
+.stack-icons {
   display: flex;
   flex-direction: row;
   align-items: center;
-
 }
 
 .stack h3 {
-  margin: 0 10px;
-  font-weight: bold;
-  color: white;
-
+  padding: 3vh 0;
 }
-.link a {
-  font-size: 30px;
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
-}
-
 
 /* Add a media query for smaller screens */
 @media (max-width: 768px) {
@@ -267,33 +229,28 @@
     margin-right: 20px;
   }
 
-  .navbar-right {
-    display: flex;
-    align-items: center;
-  }
-
   .navbar-center {
     position: fixed;
     top: 0;
-    right: -250px; /* Adjust the initial position to the right side */
+    right: -250px;
     width: 250px;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.6); /* Change the background color */
+    background-color: rgba(255, 255, 255, 0.6);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    transition: right 0.3s; /* Transition from the right side */
+    transition: right 0.3s;
     z-index: 1;
   }
 
   .navbar-center.active {
-    right: 0; /* Slide in from the right side */
+    right: 0;
   }
 
   .navbar-center a {
     text-align: left;
-    margin: 10px 20px; /* Adjust margin to separate items */
-    color: black; /* Set the text color to white */
+    margin: 10px 20px;
+    color: black;
     font-size: 20px;
     font-family: 'GeneralSans-Variable';
     text-decoration: none;
@@ -302,54 +259,45 @@
   .navbar-center .close-icon {
     display: block;
     text-align: right;
-    margin: 20px 20px 0; /* Adjust margin for the close button */
+    margin: 20px 20px 0;
     cursor: pointer;
-    color: black; /* Change the text color to white */
+    color: black;
     font-size: 58px;
   }
 
   .content-container {
-
     display: flex;
     flex-direction: column;
     text-align: center;
   }
 
   .left {
-
-    text-align: center; /* Center the content in the left column */
-    width: 100%; /* Occupy full width in responsive view */
-    margin: 20px 0; /* Add some margin for spacing */
-  }
-
-  .section-name,
-  .job-title-column {
-    width: 100%; /* Make the section name and job title column take full width */
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .section p {
-    margin: 20px 20px; /* Adjust the margin for smaller screens */
+    margin: 20px 20px;
   }
 
   .social-link {
-    margin-right: 20px; /* Adjust the margin for smaller screens */
-    margin-top: 20px; /* Add margin at the top for spacing */
+    margin-right: 20px;
+    margin-top: 20px;
   }
 
   .stack-icons {
-    flex-direction: row; /* Stack the icons vertically for smaller screens */
+    flex-direction: row;
   }
 
   .stack-icons .icon-link {
-    margin-bottom: 10px; /* Add some space between stack icons */
+    margin-bottom: 10px;
   }
 }
 
-  
-  /* Hide the close button for wider screens */
-  @media (min-width: 769px) {
-    .navbar-center .close-icon {
-      display: none;
-    }
+/* Hide the close button for wider screens */
+@media (min-width: 769px) {
+  .navbar-center .close-icon {
+    display: none;
   }
-  
+}
