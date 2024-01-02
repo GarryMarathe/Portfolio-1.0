@@ -103,7 +103,8 @@
 }
 
 .section p {
-  margin: 20px 272px;
+  font-size: 18px;
+  margin: 20px 280px;
   text-align: center;
   color: white;
   text-align: justify;
