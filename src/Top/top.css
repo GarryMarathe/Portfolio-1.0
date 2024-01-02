@@ -110,6 +110,7 @@
   text-align: justify;
   overflow-wrap: break-word;
   line-height: 1.75;
+  font-family: 'Inconsolata', monospace;
 }
 
 .section-name {
