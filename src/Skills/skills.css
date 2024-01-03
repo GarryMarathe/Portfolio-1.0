@@ -41,6 +41,12 @@
   header {
     display: flex;
     margin-bottom: 20px;
+    
+  }
+
+  .header button{
+
+    font-family: 'Exo 2', sans-serif;
   }
   
   .page {
