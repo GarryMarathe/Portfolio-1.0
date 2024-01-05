@@ -115,8 +115,8 @@
     height: 60%; /* Adjust the height as needed */
     object-fit: contain; /* or object-fit: cover; depending on your preference */
     margin-bottom: 0px;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 3px;
     
     
   }
@@ -127,7 +127,7 @@
     font-family: 'Exo 2', sans-serif;
     margin-top: 10px ;
     margin-bottom: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
   }
   
   .white-logo {
