@@ -85,8 +85,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px;
-    height: 160px; /* Set a fixed height for each skill card */
+    width: 110px;
+    height: 130px; /* Set a fixed height for each skill card */
     box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373); /* Add a box-shadow for a 3D effect */
     border-radius: 20px;
     transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
