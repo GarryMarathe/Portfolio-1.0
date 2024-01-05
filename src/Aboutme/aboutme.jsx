@@ -27,7 +27,7 @@ const AboutSection = () => {
                     </div>
 
                     <div className="column-3">
-                        <p>
+                        <p> 
                             I'm a fourth-year IT undergrad with a passion for exploring new technologies. Web development and UI/UX design have captured my interest, so equipped with Web Development skills. I'm also an avid gamer and enjoy immersing myself in virtual worlds. My hardworking nature drives me to tackle any challenge head-on and ensure tasks are completed with excellence. With a strong commitment to both my studies and personal interests, I'm excited to apply my skills, dedication, and enthusiasm to make a meaningful impact in the field.
                         </p>
 
