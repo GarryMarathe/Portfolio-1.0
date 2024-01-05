@@ -74,13 +74,13 @@ const Skills = () => {
 
       {/* Page navigation buttons */}
       <header>
-        <button onClick={() => navigateTo(PAGE_TECHNICAL)} className={`page ${page === PAGE_TECHNICAL ? 'selected' : ''} buttonText`}>
+        <button onClick={() => navigateTo(PAGE_TECHNICAL)} className={`page ${page === PAGE_TECHNICAL ? 'selected' : ''}`} style={{ fontSize: '25px'}}>
           Technical Skills
         </button>
-        <button onClick={() => navigateTo(PAGE_LANGUAGES)} className={`page ${page === PAGE_LANGUAGES ? 'selected' : ''} buttonText`}>
+        <button onClick={() => navigateTo(PAGE_LANGUAGES)} className={`page ${page === PAGE_LANGUAGES ? 'selected' : ''}`} style={{ fontSize: '25px'}}>
           Languages
         </button>
-        <button onClick={() => navigateTo(PAGE_TOOLS)} className={`page ${page === PAGE_TOOLS ? 'selected' : ''} buttonText`}>
+        <button onClick={() => navigateTo(PAGE_TOOLS)} className={`page ${page === PAGE_TOOLS ? 'selected' : ''}`} style={{ fontSize: '25px'}}>
           Tools
         </button>
       </header>
