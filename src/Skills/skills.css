@@ -103,6 +103,7 @@
     transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
     overflow: hidden; /* Hide any overflow to prevent content spillover */
     cursor: pointer;
+    
 
   img {
     transition: transform 0.5s; /* Add a transition for smooth movement */
@@ -144,3 +145,12 @@
   .white-logo {
     filter: invert(1); /* Invert colors for the white logo */
   }
+
+  @media (max-width: 768px) {
+  .skill-item {
+    width: calc(35% - 30px);
+    height: 120px;
+    margin-right: 20px; 
+    margin-left: 15px;/* Remove right margin for better spacing */
+  }
+}
