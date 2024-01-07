@@ -235,7 +235,7 @@
     margin-right: 20px;
   }
 
-  .navbar-left {
+  .navbar-left a.portfolio-link {
     display: none;
   }
 
