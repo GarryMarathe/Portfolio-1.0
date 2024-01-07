@@ -235,11 +235,16 @@
     margin-right: 20px;
   }
 
-  .navbar-left a {
-    visibility: hidden;
-    width: 0;
-    padding: 0;
-    margin: 0;
+  .navbar-left {
+    display: none;
+  }
+
+  .menu-icon {
+    margin-left: 20px; /* Adjust the margin for the menu icon */
+  }
+
+  .navbar {
+    justify-content: flex-end; /* Adjust alignment for the menu icon in responsive view */
   }
 
   .navbar-center {
