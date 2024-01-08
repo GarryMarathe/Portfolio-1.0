@@ -193,6 +193,10 @@
     .skills-header span {
       color: orangered;
     }
+
+    .skill-item p{
+      text-align: center;
+    }
     
 
   
