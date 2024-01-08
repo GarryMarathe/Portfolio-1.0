@@ -153,4 +153,17 @@
     margin-right: 20px; 
     margin-left: 15px;/* Remove right margin for better spacing */
   }
+
+  header {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 10px;
+
+
+    
+  }
+
 }
