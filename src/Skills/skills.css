@@ -152,6 +152,7 @@
     height: 120px;
     margin-right: 20px; 
     margin-left: 15px;/* Remove right margin for better spacing */
+    
   }
 
   header {
@@ -168,12 +169,7 @@
       align-items: center;
       margin-bottom: 30px;
       color: white;
-      margin-left: 20px;
-    }
-
-    .skills-header.skill-icon{
-
-      size: 2x;
+      margin-left: 10px;
     }
     
     .skills-header h1 {
