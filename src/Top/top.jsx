@@ -6,49 +6,38 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
-
-
-
 const Top = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const jobTitleRef = useRef(null); // Reference for the job title element
+  const jobTitleRef = useRef(null);
 
   useEffect(() => {
-
-    // Initialize iTyped for the job title
     init(jobTitleRef.current, {
       showCursor: true,
       strings: ['Web Developer', 'Data Analyst'],
       typeSpeed: 200,
       backSpeed: 120,
       backDelay: 1500,
-
-      // startDelay: 500, 
     });
 
-       // Add event listener to track scroll position
-       const handleScroll = () => {
-        if (window.scrollY > 0) {
-          setIsScrolled(true);
-        } else {
-          setIsScrolled(false);
-        }
-      };
-  
-      window.addEventListener('scroll', handleScroll);
-  
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
 
-   }, []);
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
-
-
 
   return (
     <div className={`background-container ${isScrolled ? 'scrolled' : ''}`}>
@@ -64,35 +53,29 @@ const Top = () => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-        <div className={`navbar-center ${showMenu ? 'active' : ''}`}>
-          <div className="close-icon" onClick={toggleMenu}>
-            &times;
-          </div>
-          <a href="/" onClick={toggleMenu}>
-            Home
-          </a>
-          <a href="/" onClick={toggleMenu}>
-            Resume
-          </a>
-          <a href="/" onClick={toggleMenu}>
-            Projects
-          </a>
-          <a href="#about" onClick={toggleMenu}>
-            About Me
-          </a>
-          <a href="/" onClick={toggleMenu}>
-            Contact
-          </a>
-        </div>
-
-               {/* Your existing navbar content */}
-
       </nav>
+      <div className={`navbar-center ${showMenu ? 'active' : ''}`}>
+        <a href="/" onClick={toggleMenu}>
+          Home
+        </a>
+        <a href="/" onClick={toggleMenu}>
+          Resume
+        </a>
+        <a href="/" onClick={toggleMenu}>
+          Projects
+        </a>
+        <a href="#about" onClick={toggleMenu}>
+          About Me
+        </a>
+        <a href="/" onClick={toggleMenu}>
+          Contact
+        </a>
+      </div>
       <div className="content-container">
         <div className="left">
           <div className="section-name">
             <h1>
-              Hi, I'm <span >Gaurav Marathe</span>
+              Hi, I'm <span>Gaurav Marathe</span>
             </h1>
           </div>
           <div className="job-title-column">
@@ -103,31 +86,28 @@ const Top = () => {
           </div>
           <div className="section">
             <p>
-              I am a passionate MERN stack developer and machine learning enthusiast. With a strong foundation in web development and a keen eye for data, I create innovative solutions that bridge technology and user experience.
+              I am a passionate MERN stack developer and machine learning enthusiast. With a strong foundation in web
+              development and a keen eye for data, I create innovative solutions that bridge technology and user
+              experience.
             </p>
           </div>
         </div>
 
-
         <div className="social-link">
-
           <div className="find">
             <h3>FIND ME ON</h3>
           </div>
-
-
           <div className="link">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className='icon-link'>
-              <FontAwesomeIcon icon={faGithub} size='1x' className='ficons' />
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+              <FontAwesomeIcon icon={faGithub} size="1x" className="ficons" />
             </a>
-            <a href="mailto:your.email@gmail.com" target="_blank" rel="noopener noreferrer0" className='icon-link'>
-              <FontAwesomeIcon icon={faEnvelope} size='1x' className='ficons' />
+            <a href="mailto:your.email@gmail.com" target="_blank" rel="noopener noreferrer0" className="icon-link">
+              <FontAwesomeIcon icon={faEnvelope} size="1x" className="ficons" />
             </a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className='icon-link'>
-              <FontAwesomeIcon icon={faLinkedin} size='1x' className='ficons' />
+            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+              <FontAwesomeIcon icon={faLinkedin} size="1x" className="ficons" />
             </a>
           </div>
-
           <div className="stack">
             <h3>WEB STACK</h3>
             <div className="stack-icons">
@@ -144,8 +124,6 @@ const Top = () => {
                 <img src="/icons/icons8-javascript.svg" alt="Express" className="icon-svg" />
               </div>
             </div>
-
-
           </div>
         </div>
       </div>
