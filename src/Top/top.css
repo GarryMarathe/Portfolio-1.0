@@ -88,6 +88,18 @@ body,html{
   transition: transform 0.3s, opacity 0.3s;
 }
 
+.menu-icon.active .bar:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-icon.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-icon.active .bar:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 .content-container {
   display: flex;
   justify-content: space-between;
