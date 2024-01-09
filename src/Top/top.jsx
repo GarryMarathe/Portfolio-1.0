@@ -60,17 +60,9 @@ const Top = () => {
           </a>
         </div>
         <div className={`menu-icon ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
-        {showMenu ? (
-            // Close button when the menu is open
-            <div className="close-icon">&times;</div>
-          ) : (
-            // Hamburger icon when the menu is closed
-            <>
-              <div className="bar"></div>
-              <div className="bar"></div>
-              <div className="bar"></div>
-            </>
-          )}
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
         </div>
         <div className={`navbar-center ${showMenu ? 'active' : ''}`}>
           <div className="close-icon" onClick={toggleMenu}>
