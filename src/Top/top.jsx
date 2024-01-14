@@ -53,7 +53,7 @@ const Top = () => {
           <div className="bar"></div>
           <div className="bar"></div>
         </div>
-      </nav>
+      
       <div className={`navbar-center ${showMenu ? 'active' : ''}`}>
         <a href="/" onClick={toggleMenu}>
           Home
@@ -71,6 +71,8 @@ const Top = () => {
           Contact
         </a>
       </div>
+
+      </nav>
       <div className="content-container">
         <div className="left">
           <div className="section-name">
