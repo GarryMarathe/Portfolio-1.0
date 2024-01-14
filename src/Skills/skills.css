@@ -1,4 +1,3 @@
-/* src/skills/skills.css */
 
 .skills-container {
   background-color: #222222;
@@ -47,6 +46,14 @@
 
     
   }
+
+  .headertech button{
+      
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px; 
+
+}
+
 
   .header button{
 
@@ -97,26 +104,26 @@
     flex-direction: column;
     align-items: center;
     width: 125px;
-    height: 145px; /* Set a fixed height for each skill card */
+    height: 145px; 
     box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373); /* Add a box-shadow for a 3D effect */
     border-radius: 20px;
-    transition: box-shadow 0.3s; /* Add a transition for a smooth effect */
-    overflow: hidden; /* Hide any overflow to prevent content spillover */
+    transition: box-shadow 0.3s; 
+    overflow: hidden; 
     cursor: pointer;
     
 
   img {
-    transition: transform 0.5s; /* Add a transition for smooth movement */
+    transition: transform 0.5s;
   }
 
   p {
-    transition: transform 0.5s; /* Add a transition for smooth movement */
+    transition: transform 0.5s; 
   }
 
   /* Hover effect */
   &:hover img, &:hover p {
     color: orangered;
-    transform: translateY(-20px); /* Slide only the skill info (logo and text) upward on hover */
+    transform: translateY(-20px); 
   }
   
     
@@ -124,8 +131,8 @@
   
   .skill-item img {
     width: 100%;
-    height: 60%; /* Adjust the height as needed */
-    object-fit: contain; /* or object-fit: cover; depending on your preference */
+    height: 60%; 
+    object-fit: contain; 
     margin-bottom: 0px;
     padding-top: 10px;
     padding-bottom: 3px;
@@ -143,7 +150,7 @@
   }
   
   .white-logo {
-    filter: invert(1); /* Invert colors for the white logo */
+    filter: invert(1); 
   }
 
   @media (max-width: 768px) {
@@ -151,7 +158,7 @@
     width: calc(35% - 30px);
     height: 120px;
     margin-right: 20px; 
-    margin-left: 15px;/* Remove right margin for better spacing */
+    margin-left: 15px;
     
   }
 
@@ -163,6 +170,9 @@
     margin-right: 20px;
     
   }
+ 
+ 
+
 
   .skills-header {
       display: flex;
