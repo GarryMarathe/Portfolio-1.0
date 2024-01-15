@@ -11,7 +11,7 @@ const AboutSection = () => {
 
 
 
-        <div className="about-section">
+        <div className="about-section" id='about'>
             <div className="about-me-text">
                 <h1>About Me</h1>
                 <hr className="line" />

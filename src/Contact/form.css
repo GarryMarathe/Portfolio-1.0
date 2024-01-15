@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    background-color: #fff;
+} */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: rgb(29, 185, 237);
+}
+
+.contact-column {
+    display: flex;
+
+    flex-direction: row;
+    align-items: center;
+   
+
+    
+}
+
+
+
+.animation-column img{
+    
+    width: 70%;
+}
+
+.animation-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    display: block;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 2px #ddd;
+    margin: 20px;
+    width: 50%;
+    padding: 20px;
+    
+}
+
+.contact-form h1{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+form input,
+textarea {
+    width: 100%;
+    margin: 15px auto;
+    padding: 10px;
+    font-family: "Poppins";
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+}
+
+
+
+form span {
+    color: orangered;
+}
+
+form button {
+    height: 30px;
+    width: 80px;
+    align-items: center;
+    border: none;
+    background-color: rgb(29, 185, 237);
+    color: #fff;
+    cursor: pointer;
+}
