@@ -41,7 +41,7 @@ const Form = () => {
 
       <div className="contact-form">
         <form onSubmit={handleSubmit} className='form'>
-          <h1>Contact Here</h1>
+          <h3>Contact Here</h3>
           <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder='Enter name' required/>
           <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder='example@gmail.com' required />
           <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder='+91' required/>
