@@ -30,6 +30,7 @@ const Form = () => {
 
     <div className="contact-container">
       <div className="contact-heading">
+        <img src="/icons/chat.png" alt="Contact Icon" />
         <h1>Contact <span>Me</span></h1>
       </div>
 
@@ -41,7 +42,7 @@ const Form = () => {
 
       <div className="contact-form">
         <form onSubmit={handleSubmit} className='form'>
-          <h3>Contact Here</h3>
+          <h3>Lets Connect</h3>
           <input type="text" name="name" id="" onChange={handleChange} value={data.name} placeholder='Enter name' required/>
           <input type="email" name="email" id="" onChange={handleChange} value={data.email} placeholder='example@gmail.com' required />
           <input type="phone" name="phone" id="" onChange={handleChange} value={data.phone} placeholder='+91' required/>
@@ -49,7 +50,7 @@ const Form = () => {
 
           <textarea name="message" id="" cols="30" rows="5" onChange={handleChange} value={data.message} placeholder='type here....' required/>
 
-          <button type="submit">Send</button>
+          <button type="submit">Send Message</button>
         </form>
 
       </div>
