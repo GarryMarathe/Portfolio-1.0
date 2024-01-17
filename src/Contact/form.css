@@ -15,12 +15,18 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #222222;
 }
 
 .contact-heading {
     font-size: 24px;
     margin-bottom: 20px;
-    color: rgb(29, 185, 237);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-heading span {
+    color: orangered;
 }
 
 .contact-column {
@@ -54,8 +60,8 @@ body {
     display: flex;
     flex-direction: column;
     display: block;
-    background-color: #fff;
-    box-shadow: 1px 1px 3px 2px #ddd;
+    background-color: #000000;
+    /* box-shadow: 1px 1px 3px 2px #ddd; */
     margin: 20px;
     width: 50%;
     padding: 20px;
@@ -65,8 +71,10 @@ body {
 .contact-form h1{
 
     display: flex;
-    justify-content: center;
+    justify-content: start;
     margin-top: 0px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 form input,
@@ -75,7 +83,7 @@ textarea {
     margin: 15px auto;
     padding: 10px;
     font-family: "Poppins";
-    background-color: #f1f1f1;
+    background-color: #000000;
     border: 1px solid #ddd;
 }
 
