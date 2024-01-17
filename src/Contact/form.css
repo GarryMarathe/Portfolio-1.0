@@ -43,7 +43,7 @@ body {
 
 .animation-column img{
     
-    width: 70%;
+    width: 80%;
 }
 
 .animation-column{
@@ -60,31 +60,34 @@ body {
     display: flex;
     flex-direction: column;
     display: block;
-    background-color: #000000;
+    /* background-color: #000000; */
     /* box-shadow: 1px 1px 3px 2px #ddd; */
     margin: 20px;
-    width: 50%;
+    width: 70%;
     padding: 20px;
+    margin-right: 150px;
     
 }
 
-.contact-form h1{
+.contact-form h3{
 
     display: flex;
     justify-content: start;
     margin-top: 0px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
+    font-size: 22px;
 }
 
 form input,
 textarea {
-    width: 100%;
+    width: 95%;
     margin: 15px auto;
     padding: 10px;
     font-family: "Poppins";
-    background-color: #000000;
+    /* background-color: #000000; */
     border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
 
