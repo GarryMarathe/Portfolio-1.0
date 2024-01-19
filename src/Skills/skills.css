@@ -154,11 +154,16 @@
   }
 
   @media (max-width: 768px) {
+
+  .skills-list{
+
+    margin: 0px;
+  }
   .skill-item {
-    width: calc(35% - 30px);
+    width: calc(30% - 20px);
     height: 120px;
-    margin-right: 20px; 
-    margin-left: 15px;
+    margin-right: 10px; 
+    margin-left: 10px;
     
   }
 
@@ -170,7 +175,12 @@
     margin-right: 20px;
     
   }
- 
+
+  .headertech button{
+      
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+  }
  
 
 
