@@ -100,13 +100,13 @@ const Top = () => {
             <h3>FIND ME ON</h3>
           </div>
           <div className="link">
-            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="https://github.com/GarryMarathe" target="_blank" rel="noopener noreferrer" className="icon-link">
               <FontAwesomeIcon icon={faGithub} size="1x" className="ficons" />
             </a>
-            <a href="mailto:your.email@gmail.com" target="_blank" rel="noopener noreferrer0" className="icon-link">
+            <a href="mailto:gauravmarathe6468@gmail.com" target="_blank" rel="noopener noreferrer0" className="icon-link">
               <FontAwesomeIcon icon={faEnvelope} size="1x" className="ficons" />
             </a>
-            <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="icon-link">
+            <a href="https://www.linkedin.com/in/gaurav-marathe-709a77269/" target="_blank" rel="noopener noreferrer" className="icon-link">
               <FontAwesomeIcon icon={faLinkedin} size="1x" className="ficons" />
             </a>
           </div>
