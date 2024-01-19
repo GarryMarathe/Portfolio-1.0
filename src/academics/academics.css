@@ -1,0 +1,73 @@
+.academics-container {
+    background-color: #111111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  
+  .academics-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .academics-header h1 {
+    margin: 5px;
+    font-size: 42px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    position: relative;
+  }
+  
+  .academics-header h1::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 1;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .academics-header span {
+    color: orangered;
+  }
+  
+  .header button{
+    font-family: 'Exo 2', sans-serif;
+  }
+  
+  .page {
+    padding: 10px;
+    margin-right: 10px;
+    background-color: #222222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "josefin sans", sans-serif;
+  }
+  
+  .page.selected {
+    background-color: orangered;
+    border-radius: 5px;
+  }
+  
+  .academics-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .education-section,
+  .work-section {
+    /* Add your styles for individual sections as needed */
+  }
+  
+  .edu-entry,
+  .work-entry {
+    /* Add your styles for individual entries as needed */
+  }
+  
