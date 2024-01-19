@@ -128,7 +128,19 @@ form button:hover {
         align-items: center; /* Center items in column */
     }
 
-    .animation-column,
+    .contact-heading{
+
+        font-size: 20px;
+    }
+
+    
+    .animation-column{
+
+        width: 100%;
+    }
+
+   
+
     .contact-form {
         width: 80%; /* Take 100% width on smaller screens */
         margin-right: 50px; /* Remove right margin on smaller screens */
