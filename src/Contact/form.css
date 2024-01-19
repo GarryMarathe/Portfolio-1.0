@@ -122,19 +122,22 @@ form button:hover {
     color: #fff;
 }
 
-/* Media queries for responsiveness */
-@media (min-width: 768px) {
-    .contact-container {
-        padding: 40px; /* Adjust padding for larger screens */
-    }
-
+@media (max-width: 768px) {
     .contact-column {
-        display: flex;
-        flex-direction: column; 
+        flex-direction: column; /* Change to column for smaller screens */
+        align-items: center; /* Center items in column */
     }
 
     .animation-column,
     .contact-form {
-        width: 50%; 
+        width: 80%; /* Take 100% width on smaller screens */
+        margin-right: 50px; /* Remove right margin on smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        margin-top: 20px; /* Add some top margin between animation and form on smaller screens */
     }
 }
+
+
