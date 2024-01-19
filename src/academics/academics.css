@@ -36,7 +36,7 @@
     color: orangered;
   }
   
-  .header button{
+  .header button {
     font-family: 'Exo 2', sans-serif;
   }
   
@@ -59,15 +59,53 @@
   .academics-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   
-  .education-section,
-  .work-section {
-    /* Add your styles for individual sections as needed */
+  .timeline-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
-  .edu-entry,
-  .work-entry {
-    /* Add your styles for individual entries as needed */
+  .timeline-entry {
+    background-color: #222222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373);
+    width: 60%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .timeline-entry h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-entry h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-entry p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    display: inline-block;
+    background-color: #06d6a0;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #0ac593;
   }
   

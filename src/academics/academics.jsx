@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
 import './academics.css';
+import { ReactComponent as WorkIcon } from "./work.svg";
+import { ReactComponent as SchoolIcon } from "./school.svg";
+import timelineElements from "./timelineElements";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
 
 const Academics = () => {
   const [page, setPage] = useState('education');
@@ -8,39 +13,8 @@ const Academics = () => {
     setPage(nextPage);
   };
 
-  const educationData = [
-    { institution: 'Your University', degree: 'Bachelor of Science', year: '2022' },
-    // Add more entries as needed
-  ];
-
-  const workExperienceData = [
-    { position: 'Software Developer', company: 'Tech Company', year: '2020-2022' },
-    // Add more entries as needed
-  ];
-
-  const renderEducation = () => (
-    <div className="education-section">
-      {educationData.map((edu, index) => (
-        <div key={index} className="edu-entry">
-          <p>{edu.institution}</p>
-          <p>{edu.degree}</p>
-          <p>{edu.year}</p>
-        </div>
-      ))}
-    </div>
-  );
-
-  const renderWorkExperience = () => (
-    <div className="work-section">
-      {workExperienceData.map((work, index) => (
-        <div key={index} className="work-entry">
-          <p>{work.position}</p>
-          <p>{work.company}</p>
-          <p>{work.year}</p>
-        </div>
-      ))}
-    </div>
-  );
+  let workIconStyles = { background: "#06D6A0" };
+  let schoolIconStyles = { background: "#f9c74f" };
 
   return (
     <div className="academics-container">
@@ -58,8 +32,44 @@ const Academics = () => {
       </header>
 
       <div className="academics-content">
-        {page === 'education' && renderEducation()}
-        {page === 'work-experience' && renderWorkExperience()}
+        {page === 'education' && (
+          <div className="timeline-section">
+            <VerticalTimeline>
+              {timelineElements.map((element) => (
+                <VerticalTimelineElement
+                  key={element.id}
+                  date={element.date}
+                  dateClassName="date"
+                  iconStyle={element.icon === 'school' ? schoolIconStyles : workIconStyles}
+                  icon={element.icon === 'school' ? <SchoolIcon /> : <WorkIcon />}
+                >
+                  <h3 className="vertical-timeline-element-title">
+                    {element.title}
+                  </h3>
+                  <h5 className="vertical-timeline-element-subtitle">
+                    {element.location}
+                  </h5>
+                  <p id="description">{element.description}</p>
+                  {element.buttonText && (
+                    <a
+                      className={`button ${element.icon === 'work' ? 'workButton' : 'schoolButton'}`}
+                      href="/"
+                    >
+                      {element.buttonText}
+                    </a>
+                  )}
+                </VerticalTimelineElement>
+              ))}
+            </VerticalTimeline>
+          </div>
+        )}
+
+        {page === 'work-experience' && (
+          /* Render work experience data here */
+          <div className="work-section">
+            {/* Add your work experience data rendering logic here */}
+          </div>
+        )}
       </div>
     </div>
   );
