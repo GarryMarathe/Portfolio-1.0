@@ -28,7 +28,7 @@ const Form = () => {
 
   return (
 
-    <div className="contact-container">
+    <div className="contact-container" id='contact'>
       <div className="contact-heading">
         <img src="/icons/chat.png" alt="Contact Icon" />
         <h1>Contact <span>Me</span></h1>

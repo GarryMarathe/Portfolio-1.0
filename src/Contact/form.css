@@ -78,7 +78,7 @@ body {
     justify-content: start;
     /* margin-top: 0px; */
     font-family: 'Montserrat',sans-serif;
-    
+
     color: #fff;
     font-size: 22px;
     margin-left: 15px;
@@ -120,4 +120,21 @@ form button {
 form button:hover {
     background-color: orangered;
     color: #fff;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 768px) {
+    .contact-container {
+        padding: 40px; /* Adjust padding for larger screens */
+    }
+
+    .contact-column {
+        display: flex;
+        flex-direction: column; 
+    }
+
+    .animation-column,
+    .contact-form {
+        width: 50%; 
+    }
 }
