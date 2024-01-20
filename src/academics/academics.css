@@ -1,111 +1,137 @@
-.academics-container {
-    background-color: #111111;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 40px;
-    padding-bottom: 30px;
-  }
-  
-  .academics-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-    color: white;
-  }
-  
-  .academics-header h1 {
-    margin: 5px;
-    font-size: 42px;
-    padding-left: 10px;
-    padding-bottom: 5px;
-    position: relative;
-  }
-  
-  .academics-header h1::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 1;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-  }
-  
-  .academics-header span {
-    color: orangered;
-  }
-  
-  .header button {
-    font-family: 'Exo 2', sans-serif;
-  }
-  
-  .page {
-    padding: 10px;
-    margin-right: 10px;
-    background-color: #222222;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    font-family: "josefin sans", sans-serif;
-  }
-  
-  .page.selected {
-    background-color: orangered;
-    border-radius: 5px;
-  }
-  
-  .academics-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .timeline-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .timeline-entry {
-    background-color: #222222;
-    color: #fff;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373);
-    width: 60%;
-    max-width: 600px;
-    position: relative;
-  }
-  
-  .timeline-entry h3 {
-    font-size: 24px;
-    margin-bottom: 5px;
-  }
-  
-  .timeline-entry h5 {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .timeline-entry p {
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-  
-  .button {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: white;
-    display: inline-block;
-    background-color: #06d6a0;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color: #0ac593;
-  }
-  
+    /* Updated CSS */
+    .academics-container {
+        background-color: #111111;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    .academics-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+        color: white;
+    }
+
+    .academics-header h1 {
+        margin: 5px;
+        font-size: 42px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        position: relative;
+    }
+
+    .academics-header h1::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 1;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+    }
+
+    .academics-header span {
+        color: orangered;
+    }
+
+    .header button {
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .page {
+        padding: 10px;
+        margin-right: 10px;
+        background-color: #222222;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "josefin sans", sans-serif;
+    }
+
+    .page.selected {
+        background-color: orangered;
+        border-radius: 5px;
+    }
+
+    .academics-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeline-entry {
+        background-color: #222222;
+        color: #fff;
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(144, 142, 142, 0.373);
+        width: 80%;
+        max-width: 800px;
+        position: relative;
+        margin-left: 150px; /* Adjust the margin-left value to increase or decrease the space */
+    }
+
+    .timeline-entry::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 40%; /* Adjust the left position of the timeline entry arrow */
+        border: 2px solid white; /* Add a border for the vertical line */
+    }
+    
+    .timeline-entry .vertical-timeline-element-content {
+        padding-left: 70px; /* Adjust the padding-left value to increase or decrease the space to the left */
+        padding-right: 40px;
+        margin-left: 15%; /* Adjust the margin-left value to increase or decrease the space to the left */
+        margin-right: 10%; /* Adjust the margin-right value to increase or decrease the space to the right */
+    }
+    
+
+
+
+    .timeline-entry h3 {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .timeline-entry h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .timeline-entry p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .date {
+        color: white;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .button {
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        color: white;
+        display: inline-block;
+        background-color: #06d6a0;
+        transition: background-color 0.3s;
+    }
+
+    .button:hover {
+        background-color: #0ac593;
+    }

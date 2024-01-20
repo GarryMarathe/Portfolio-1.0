@@ -1,3 +1,4 @@
+// Updated JSX
 import React, { useState } from 'react';
 import './academics.css';
 import { ReactComponent as WorkIcon } from "./work.svg";
@@ -38,10 +39,11 @@ const Academics = () => {
               {timelineElements.map((element) => (
                 <VerticalTimelineElement
                   key={element.id}
-                  date={element.date}
+                  date={<span className="date">{element.date}</span>} // Wrap date in a span with a class for custom styling
                   dateClassName="date"
                   iconStyle={element.icon === 'school' ? schoolIconStyles : workIconStyles}
                   icon={element.icon === 'school' ? <SchoolIcon /> : <WorkIcon />}
+                  contentStyle={{ background: '#fff', color: '#222222' }} // Add custom styles to the content container
                 >
                   <h3 className="vertical-timeline-element-title">
                     {element.title}
