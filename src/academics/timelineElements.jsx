@@ -3,10 +3,11 @@ const timelineElements = [
     id: 1,
     title: 'Graduation Degree',
     location: 'Savitiribai Phule Pune University, Pune',
-    description: 'Studied various subjects related to computer science.',
+    description: 'Studied various subjects related to computer science.  ',
     buttonText: 'Learn More',
     date: '2021-Present',
     icon: 'school',
+    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS98HKZOrlsVT9rCX6VHvYpN-y1FGGdQ6T5LaHHzUX507o-iEtdMSDdWOfG7txlVLfOJPs&usqp=CAU"
   },
   {
     id: 2,
