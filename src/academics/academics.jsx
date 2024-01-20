@@ -38,39 +38,36 @@ const Academics = () => {
             <VerticalTimeline>
 
 
-          {/* <div className="schoolImg">
-          {timelineElements.map((element) => (
-            <VerticalTimelineElement>
-              <img src={element.img} alt="" />
-            </VerticalTimelineElement>
-          ))}
-          </div> */}
-
-              {timelineElements.map((element) => (
+             {timelineElements.map((element) => (
                 <VerticalTimelineElement
+                  
                   key={element.id}
                   date={<span className="date">{element.date}</span>} // Wrap date in a span with a class for custom styling
                   dateClassName="date"
                   iconStyle={element.icon === 'school' ? schoolIconStyles : workIconStyles}
                   icon={element.icon === 'school' ? <SchoolIcon /> : <WorkIcon />}
-                  contentStyle={{ background: '#fff',   color: '#222222', padding:'20px', margin:'0  -20px'}} // Add custom styles to the content container
+                  contentStyle={{ background: '#fff',   color: '#222222', padding:'20px', margin:'0  -70%', height:'auto', width:'600px'}} // Add custom styles to the content container
                 
-                >
+                > 
+
+                  <div className="school">
+                  <div className="schoolImg">
+                      <img src={element.img} alt="" />
+                  </div>
+                  
+                  <div className="schoolDetails">
                   <h3 className="vertical-timeline-element-title">
                     {element.title}
                   </h3>
                   <h5 className="vertical-timeline-element-subtitle">
                     {element.location}
                   </h5>
-                  <p className="description" style={{fontSize:' 16px', lineHeight:'1.3em', paddingBottom:'15px'}}>{element.description}</p>
-                  {/* {element.buttonText && (
-                    <a
-                      className={`button ${element.icon === 'work' ? 'workButton' : 'schoolButton'}`}
-                      href="/"
-                    >
-                      {element.buttonText}
-                    </a>
-                  )} */}
+                  <p className="description" style={{fontSize:' 16px', lineHeight:'1.3em', paddingBottom:'15px'}}>{element.clgName}</p>
+                  <p >Grade:{element.grade}</p>
+                
+                  </div>
+
+                  </div>
                 </VerticalTimelineElement>
               ))}
             </VerticalTimeline>
