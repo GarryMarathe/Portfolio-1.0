@@ -1,13 +1,13 @@
 const timelineElements = [
   {
     id: 1,
-    clgName: 'PES Modern College of Engineering Pune',
-    degree: 'Bachelor of Information Technology Engineering',
+    clgName: 'P.E.S Modern College of Engineering, Pune',
+    degree: 'Bachelor of Information Technology Engineering (B.E.)',
     university: 'Savitiribai Phule Pune University, Pune',
     grade: '9.37 CGPA',
     date: '2021-Present',
     icon: 'school',
-    img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9moPGZ0sa9tn9thTjD5O_Ilb8HIGW5xiWDZ7801RXEWmN3IhYO4DrSMMG-OWw39YpuL8&usqp=CAU"
+    img:"https://www.collegebatch.com/static/clg-gallery/progressive-education-societys-modern-college-of-engineering-pune-225925.jpg"
   },
   {
     id: 2,
@@ -17,7 +17,8 @@ const timelineElements = [
     grade: '83.69%',
     date: '2020',
     icon: 'school',
-    img: "https://content3.jdmagicbox.com/comp/pune/q4/020pxx20.xx20.140227145853.g6q4/catalogue/shri-haribhau-balwantrao-girme-vidyalaya-wanowrie-pune-schools-nrzf95utp0.jpg"
+    img:'https://content3.jdmagicbox.com/comp/pune/q4/020pxx20.xx20.140227145853.g6q4/catalogue/shri-haribhau-balwantrao-girme-vidyalaya-wanowrie-pune-schools-nrzf95utp0.jpg'
+
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const timelineElements = [
     grade: '92.20%',
     date: '2018',
     icon: 'school',
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAV_kC4mwHA6-X3T7CcJaFGkRwI1m1ltLsviaWGg-4NUUG3kCvYfTmlFoe07p6rLwBj3o&usqp=CAU"
+    img: "https://1.bp.blogspot.com/-JHS25Z2ZwFc/XEV66tQCykI/AAAAAAAABxM/hc4Vf0ozuBgsT2Ae-Xj6pMNaaRV4oavLwCLcBGAs/s1600/DSC_0003.JPG"
   },
   // Add more elements as needed
 ];
