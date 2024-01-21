@@ -1,9 +1,9 @@
 const timelineElements = [
   {
     id: 1,
-    title: 'Bachelor of Information Technology Engineering',
-    location: 'Savitiribai Phule Pune University, Pune',
     clgName: 'PES Modern College of Engineering Pune',
+    degree: 'Bachelor of Information Technology Engineering',
+    university: 'Savitiribai Phule Pune University, Pune',
     grade: '9.37 CGPA',
     date: '2021-Present',
     icon: 'school',
@@ -11,8 +11,9 @@ const timelineElements = [
   },
   {
     id: 2,
-    title: 'Higher Secondary Education (HSC)',
-    location: 'Shri. H.B. Girme Junior College, Pune',
+    clgName:'Shri. H.B. Girme Junior College, Pune',
+    degree: 'Higher Secondary Education (HSC)',
+    university: 'Maharashtra State Board of Secondary and Higher Secondary Education',
     grade: '83.69%',
     date: '2020',
     icon: 'school',
@@ -20,8 +21,9 @@ const timelineElements = [
   },
   {
     id: 3,
-    title: 'Primary & Secondary Education (CBSE)',
-    location: 'ST. Joseph Convent School, Bilakhed, Chalisgaon',
+    clgName: 'ST. Joseph Convent School, Bilakhed, Chalisgaon',
+    degree: 'Primary & Secondary Education (CBSE)',
+    university: 'Central Board of Secondary Education',
     grade: '92.20%',
     date: '2018',
     icon: 'school',

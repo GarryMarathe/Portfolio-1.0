@@ -5,6 +5,7 @@ import { ReactComponent as SchoolIcon } from "./school.svg";
 import timelineElements from "./timelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import CustomVerticalTimelineElement from "./CustomVerticalTimelineElement";
 
 const Academics = () => {
   const [page, setPage] = useState('education');
@@ -22,10 +23,10 @@ const Academics = () => {
       setCardWidth(newCardWidth);
 
       // Adjust marginLeft for larger screens
-      const newMarginLeft = window.innerWidth > 768 ? '-30%' : '15%';
+      const newMarginLeft = window.innerWidth > 768 ? '-27%' : '15%';
       setCardMarginLeft(newMarginLeft);
 
-      const newCardHeight = window.innerWidth <= 768 ? '310px' : 'auto'; // You can customize this value
+      const newCardHeight = window.innerWidth <= 768 ? 'auto' : 'auto'; // You can customize this value
       setCardHeight(newCardHeight);
     };
 
@@ -62,7 +63,7 @@ const Academics = () => {
           <div className="timeline-section">
             <VerticalTimeline>
               {timelineElements.map((element) => (
-                <VerticalTimelineElement
+                <CustomVerticalTimelineElement
                   key={element.id}
                   date={<span className="date">{element.date}</span>}
                   dateClassName="date"
@@ -71,7 +72,7 @@ const Academics = () => {
                   contentStyle={{
                     background: '#fff',
                     color: '#222222',
-                    padding: '20px',
+                    padding: '20px 7px 15px 20px',
                     margin: `0 ${cardMarginLeft}`,  // Adjust marginLeft
                     width: cardWidth,
                     height: cardHeight,
@@ -83,16 +84,16 @@ const Academics = () => {
                     </div>
                     <div className="schoolDetails">
                       <h3 className="vertical-timeline-element-title">
-                        {element.title}
+                        {element.clgName}
                       </h3>
                       <h5 className="vertical-timeline-element-subtitle">
-                        {element.location}
+                        {element.degree}
                       </h5>
-                      <p className="description">{element.clgName}</p>
-                      <p className='grade'>Grade:{element.grade}</p>
+                      <p className="description" style={{margin:'5px 0 0 0'}} >{element.university}</p>
+                      <p className='grade'style={{margin:'10px 0 0 0'}} >Grade:{element.grade}</p>
                     </div>
                   </div>
-                </VerticalTimelineElement>
+                </CustomVerticalTimelineElement>
               ))}
             </VerticalTimeline>
           </div>
