@@ -71,7 +71,7 @@ const Academics = () => {
                   icon={element.icon === 'school' ? <SchoolIcon /> : <WorkIcon />}
                   contentStyle={{
                     background: '#fff',
-                    color: '#222222',
+                    // color: '#222222',
                     padding: '10px 5px 10px 10px',
                     margin: `0 ${cardMarginLeft}`,  // Adjust marginLeft
                     width: cardWidth,
@@ -90,7 +90,7 @@ const Academics = () => {
                         {element.degree}
                       </h5>
                       <p className="description" style={{margin:'5px 0 0 0'}} >{element.university}</p>
-                      <p className='grade'style={{margin:'3px 0 2px 0'}} >Grade: {element.grade}</p>
+                      <p className='grade'style={{margin:'3px 0 10px 0'}} >Grade: {element.grade}</p>
                     </div>
                   </div>
                 </CustomVerticalTimelineElement>

@@ -145,7 +145,7 @@
     @media (max-width: 768px) {
       .academics-container {
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 30px;
       }
 
       .academics-header h1 {
@@ -185,8 +185,9 @@
         font-size: 14px;
       }
 
-      .grade {
-        font-size: 8px;
+      .schoolDetails .grade {
+        font-size: 14px;
+        
 
       }
 
