@@ -25,7 +25,7 @@ const Academics = () => {
       const newMarginLeft = window.innerWidth > 768 ? '-30%' : '15%';
       setCardMarginLeft(newMarginLeft);
 
-      const newCardHeight = window.innerWidth <= 768 ? 'auto' : 'auto'; // You can customize this value
+      const newCardHeight = window.innerWidth <= 768 ? '310px' : 'auto'; // You can customize this value
       setCardHeight(newCardHeight);
     };
 
