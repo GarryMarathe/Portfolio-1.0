@@ -10,6 +10,7 @@ const Academics = () => {
   const [page, setPage] = useState('education');
   const [cardWidth, setCardWidth] = useState('70%');
   const [cardMarginLeft, setCardMarginLeft] = useState('-35%');
+  const [cardHeight, setCardHeight] = useState('auto');
 
   const navigateTo = (nextPage) => {
     setPage(nextPage);
@@ -23,6 +24,9 @@ const Academics = () => {
       // Adjust marginLeft for larger screens
       const newMarginLeft = window.innerWidth > 768 ? '-30%' : '15%';
       setCardMarginLeft(newMarginLeft);
+
+      const newCardHeight = window.innerWidth <= 768 ? 'auto' : 'auto'; // You can customize this value
+      setCardHeight(newCardHeight);
     };
 
     // Attach the resize event listener
@@ -70,7 +74,7 @@ const Academics = () => {
                     padding: '20px',
                     margin: `0 ${cardMarginLeft}`,  // Adjust marginLeft
                     width: cardWidth,
-                    height: 'auto',
+                    height: cardHeight,
                   }}
                 >
                   <div className="school">
