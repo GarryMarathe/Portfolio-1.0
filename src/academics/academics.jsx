@@ -90,7 +90,7 @@ const Academics = () => {
                         {element.degree}
                       </h5>
                       <p className="description" style={{margin:'5px 0 0 0'}} >{element.university}</p>
-                      <p className='grade'style={{margin:'3px 0 2px 0'}} >Grade:{element.grade}</p>
+                      <p className='grade'style={{margin:'3px 0 2px 0'}} >Grade: {element.grade}</p>
                     </div>
                   </div>
                 </CustomVerticalTimelineElement>

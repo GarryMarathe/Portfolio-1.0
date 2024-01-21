@@ -1,197 +1,205 @@
     /* Updated CSS */
     .academics-container {
-        background-color: #111111;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 40px;
-        padding-bottom: 30px;
+      background-color: #111111;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 30px;
     }
 
     .academics-header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
-        color: white;
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      color: white;
     }
 
     .academics-header h1 {
-        margin: 5px;
-        font-size: 42px;
-        padding-left: 10px;
-        padding-bottom: 5px;
-        position: relative;
+      margin: 5px;
+      font-size: 42px;
+      padding-left: 10px;
+      padding-bottom: 5px;
+      position: relative;
     }
 
     .academics-header h1::before {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 1;
-        width: 100%;
-        height: 2px;
-        background-color: white;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 1;
+      width: 100%;
+      height: 2px;
+      background-color: white;
     }
 
     .academics-header span {
-        color: orangered;
+      color: orangered;
     }
 
     .header button {
-        font-family: 'Exo 2', sans-serif;
+      font-family: 'Exo 2', sans-serif;
     }
 
     .page {
-        padding: 10px;
-        margin-right: 10px;
-        background-color: #222222;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        font-family: "josefin sans", sans-serif;
+      padding: 10px;
+      margin-right: 10px;
+      background-color: #222222;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      font-size: 20px;
+      font-family: "josefin sans", sans-serif;
     }
 
     .page.selected {
-        background-color: orangered;
-        border-radius: 5px;
+      background-color: orangered;
+      border-radius: 5px;
     }
 
     .academics-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     .timeline-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-   
-    .school {
-        display: flex;
-       
-      }
-      
-      .schoolImg {
-        flex: 50%;
-         
-        
-      }
-      
-      .schoolImg img {
-        margin-top: 10px;
-        width: 95%;
-        border-radius: 15px;
-        max-width: 100%;
-        height: 25vh;
-       
-      }
-      .schoolImg img:hover {
-        cursor: pointer;
-       
-      }
-
-       
-      .schoolDetails {
-        flex: 50%; /* 70% of the parent container */
-
-
-      }
-    
-      
-    .date {
-        color: #fff;
-        font-size: 20px;
-    }
-
-  .schoolDetails .vertical-timeline-element-title{
-    color: black;
-    font-size: 20px;
-    font-weight: 800;
-    font-family: 'poppins', sans-serif;
-    line-height: 1.3em;
-  }
-
-  .vertical-timeline-element-subtitle{
-    padding-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Kanit', sans-serif;
-    line-height: 1.2em;
-  }
-
-  .schoolDetails .description{
-    line-height: 1.2em;
-    padding: 0;
-    font-family: 'Kanit', sans-serif;
-  }
-  
-  .schoolDetails .grade{
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-
-@media (max-width: 768px) {
-    .academics-container {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .academics-header h1 {
-        font-size: 32px;
-    }
-
-    .academics-header h1::before {
-        width: 90%;
-        height: 1px;
-    }
-
-    .academics-header span {
-        font-size: 32px;
-    }
-
-    .academics-content {
-        padding: 0px;
-    }
-
-    .school{
-
       display: flex;
       flex-direction: column;
+      align-items: center;
+    }
+
+
+    .school {
+      display: flex;
+
+    }
+
+    .schoolImg {
+      flex: 50%;
+
+
     }
 
     .schoolImg img {
+      margin-top: 10px;
+      width: 95%;
+      border-radius: 15px;
+      max-width: 100%;
+      height: 25vh;
+
+    }
+
+    .schoolImg img:hover {
+      cursor: pointer;
+
+    }
+
+
+    .schoolDetails {
+      flex: 50%;
+      /* 70% of the parent container */
+
+
+    }
+
+
+    .date {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .schoolDetails .vertical-timeline-element-title {
+      color: black;
+      font-size: 20px;
+      font-weight: 800;
+      font-family: 'poppins', sans-serif;
+      line-height: 1.3em;
+      
+
+    }
+
+    .vertical-timeline-element-subtitle {
+      padding-top: 10px;
+      font-size: 17px;
+      font-weight: 600;
+      font-family: 'Kanit', sans-serif;
+      line-height: 1.2em;
+      color: orangered;
+    }
+
+    .schoolDetails .description {
+      line-height: 1.2em;
+      padding: 0;
+      font-family: 'Kanit', sans-serif;
+      color: gray;
+    }
+
+    .schoolDetails .grade {
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'Exo 2', sans-serif;
+      color: #222222;
+    }
+
+    @media (max-width: 768px) {
+      .academics-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .academics-header h1 {
+        font-size: 32px;
+      }
+
+      .academics-header h1::before {
+        width: 90%;
+        height: 1px;
+      }
+
+      .academics-header span {
+        font-size: 32px;
+      }
+
+      .academics-content {
+        padding: 0px;
+      }
+
+      .school {
+
+        display: flex;
+        flex-direction: column;
+      }
+
+      .schoolImg img {
 
         width: 100%;
         height: 12vh;
-    }
+      }
 
-    .schoolDetails .vertical-timeline-element-title{
+      .schoolDetails .vertical-timeline-element-title {
         font-size: 16px;
-    }
+      }
 
-    .vertical-timeline-element-subtitle{
+      .vertical-timeline-element-subtitle {
         font-size: 14px;
-    }
+      }
 
-    .grade{
+      .grade {
         font-size: 8px;
 
-    }
+      }
 
-    .date{
-      color: #fff;
-      font-size: 20px;
-      margin-top: 10px;
-    }
+      .date {
+        color: #fff;
+        font-size: 20px;
+        margin-top: 10px;
+      }
 
-    .date:hover{
-      cursor: pointer;
-      color: orangered;
+      .date:hover {
+        cursor: pointer;
+        color: orangered;
+      }
+
+
     }
-    
-  
-}
