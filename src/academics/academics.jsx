@@ -39,6 +39,7 @@ const Academics = () => {
 
 
              {timelineElements.map((element) => (
+              
                 <VerticalTimelineElement
                   
                   key={element.id}
@@ -46,7 +47,16 @@ const Academics = () => {
                   dateClassName="date"
                   iconStyle={element.icon === 'school' ? schoolIconStyles : workIconStyles}
                   icon={element.icon === 'school' ? <SchoolIcon /> : <WorkIcon />}
-                  contentStyle={{ background: '#fff',   color: '#222222', padding:'20px', margin:'0  -70%', height:'auto', width:'600px'}} // Add custom styles to the content container
+                  contentStyle={{
+                    background: '#fff',
+                    color: '#222222',
+                    padding: '20px',
+                    margin: '0 -70%',
+                    height: 'auto',
+                    width: '600px',
+                    
+                  }}
+                 
                 
                 > 
 
@@ -62,8 +72,8 @@ const Academics = () => {
                   <h5 className="vertical-timeline-element-subtitle">
                     {element.location}
                   </h5>
-                  <p className="description" style={{fontSize:' 16px', lineHeight:'1.3em', paddingBottom:'15px'}}>{element.clgName}</p>
-                  <p >Grade:{element.grade}</p>
+                  <p className="description">{element.clgName}</p>
+                  <p  className='grade'>Grade:{element.grade}</p>
                 
                   </div>
 
