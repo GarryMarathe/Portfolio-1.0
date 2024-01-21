@@ -76,14 +76,14 @@
       }
       
       .schoolImg {
-        flex: 60%;
+        flex: 50%;
          
         
       }
       
       .schoolImg img {
         margin-top: 10px;
-        width: 90%;
+        width: 95%;
         border-radius: 15px;
         max-width: 100%;
         height: 25vh;
@@ -96,35 +96,42 @@
 
        
       .schoolDetails {
-        flex: 40%; /* 70% of the parent container */
+        flex: 50%; /* 70% of the parent container */
+
 
       }
-      .schoolDetails .description{
-        line-height: 1.2em;
-        padding-bottom: 100px;
-        padding: 0;
-      }
+    
       
     .date {
-        color: white;
+        color: #fff;
+        font-size: 20px;
     }
 
   .schoolDetails .vertical-timeline-element-title{
     color: black;
     font-size: 20px;
-    font-weight: 700;
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.3em;
   }
 
   .vertical-timeline-element-subtitle{
     padding-top: 10px;
     font-size: 16px;
-    font-weight: 700;
-    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.2em;
+  }
+
+  .schoolDetails .description{
+    line-height: 1.2em;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
   }
   
-  .grade{
-    font-size: 10px;
+  .schoolDetails .grade{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
 @media (max-width: 768px) {
@@ -150,10 +157,16 @@
         padding: 0px;
     }
 
-    
+    .school{
+
+      display: flex;
+      flex-direction: column;
+    }
 
     .schoolImg img {
-        height: 20vh;
+
+        width: 100%;
+        height: 12vh;
     }
 
     .schoolDetails .vertical-timeline-element-title{
@@ -168,4 +181,17 @@
         font-size: 8px;
 
     }
+
+    .date{
+      color: #fff;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .date:hover{
+      cursor: pointer;
+      color: orangered;
+    }
+    
+  
 }

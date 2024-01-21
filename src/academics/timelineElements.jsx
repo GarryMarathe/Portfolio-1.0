@@ -22,7 +22,7 @@ const timelineElements = [
   },
   {
     id: 3,
-    clgName: 'ST. Joseph Convent School, Bilakhed, Chalisgaon',
+    clgName: 'ST. Joseph Convent School, Chalisgaon',
     degree: 'Primary & Secondary Education (CBSE)',
     university: 'Central Board of Secondary Education',
     grade: '92.20%',

@@ -26,7 +26,7 @@ const Academics = () => {
       const newMarginLeft = window.innerWidth > 768 ? '-27%' : '15%';
       setCardMarginLeft(newMarginLeft);
 
-      const newCardHeight = window.innerWidth <= 768 ? '25vh' : 'auto'; // You can customize this value
+      const newCardHeight = window.innerWidth <= 768 ? '27vh' : 'auto'; // You can customize this value
       setCardHeight(newCardHeight);
     };
 
@@ -72,7 +72,7 @@ const Academics = () => {
                   contentStyle={{
                     background: '#fff',
                     color: '#222222',
-                    padding: '20px 13px 15px 20px',
+                    padding: '10px 5px 10px 10px',
                     margin: `0 ${cardMarginLeft}`,  // Adjust marginLeft
                     width: cardWidth,
                     height: cardHeight,
@@ -83,14 +83,14 @@ const Academics = () => {
                       <img src={element.img} alt="" />
                     </div>
                     <div className="schoolDetails">
-                      <h3 className="vertical-timeline-element-title">
+                      <h3 className="vertical-timeline-element-title" style={{margin:'8px 0 0 0'}}>
                         {element.clgName}
                       </h3>
                       <h5 className="vertical-timeline-element-subtitle">
                         {element.degree}
                       </h5>
                       <p className="description" style={{margin:'5px 0 0 0'}} >{element.university}</p>
-                      <p className='grade'style={{margin:'10px 0 0 0'}} >Grade:{element.grade}</p>
+                      <p className='grade'style={{margin:'3px 0 2px 0'}} >Grade:{element.grade}</p>
                     </div>
                   </div>
                 </CustomVerticalTimelineElement>
