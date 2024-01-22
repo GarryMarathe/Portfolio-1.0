@@ -64,7 +64,7 @@ const Skills = () => {
   );
 
   return (
-    <div className="skills-container">
+    <div className="skills-container" id='skills'>
       {/* Header section */}
       <div className="skills-header">
         <FontAwesomeIcon icon={faCogs} size="3x" className="skills-icon" />

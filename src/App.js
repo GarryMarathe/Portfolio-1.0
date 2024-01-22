@@ -1,4 +1,5 @@
 import AboutSection from "./Aboutme/aboutme";
+import "./App.css";
 import Top from "./Top/top";
 import Skills from "./Skills/skills";
 import Projects from "./Project/project";
@@ -11,7 +12,7 @@ function App() {
     <Top />
     <AboutSection />
     <Skills />
-    <Projects />
+    {/* <Projects /> */}
     <Academics />
     <Form />
 

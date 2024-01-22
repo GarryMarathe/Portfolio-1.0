@@ -14,10 +14,10 @@ const Top = () => {
   useEffect(() => {
     init(jobTitleRef.current, {
       showCursor: true,
-      strings: ['Web Developer', 'Data Analyst'],
-      typeSpeed: 200,
-      backSpeed: 120,
-      backDelay: 1500,
+      strings: ['Web Developer', 'IT Undergrad'],
+      typeSpeed: 100,
+      backSpeed: 80,
+      backDelay: 1200,
     });
 
     const handleScroll = () => {
@@ -55,17 +55,17 @@ const Top = () => {
         </div>
       
       <div className={`navbar-center ${showMenu ? 'active' : ''}`}>
-        <a href="/" onClick={toggleMenu}>
-          Home
+        <a href="#about" onClick={toggleMenu}>
+          About Me
         </a>
-        <a href="/" onClick={toggleMenu}>
-          Resume
+        <a href="#skills" onClick={toggleMenu}>
+          Skills
         </a>
         <a href="/" onClick={toggleMenu}>
           Projects
         </a>
-        <a href="#about" onClick={toggleMenu}>
-          About Me
+        <a href="#academics" onClick={toggleMenu}>
+          Academics
         </a>
         <a href="#contact" onClick={toggleMenu}>
           Contact
