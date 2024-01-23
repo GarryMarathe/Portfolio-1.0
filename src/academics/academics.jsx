@@ -6,6 +6,7 @@ import timelineElements from "./timelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import CustomVerticalTimelineElement from "./CustomVerticalTimelineElement";
+import WorkExperience from "./work.jsx"; 
 
 const Academics = () => {
   const [page, setPage] = useState('education');
@@ -44,10 +45,10 @@ const Academics = () => {
   let schoolIconStyles = { background: "#f9c74f" };
 
   return (
-    <div className="academics-container">
+    <div className="academics-container" id='academics'>
       <div className="academics-header">
         <h1>Academics & <span>Work Experience</span></h1>
-      </div>
+    </div>
 
       <header className='headertech'>
         <button onClick={() => navigateTo('education')} className={`page ${page === 'education' ? 'selected' : ''}`} >
@@ -101,8 +102,8 @@ const Academics = () => {
 
         {page === 'work-experience' && (
           <div className="work-section">
-            {/* Add your work experience data rendering logic here */}
-          </div>
+          <WorkExperience />
+        </div>
         )}
       </div>
     </div>
