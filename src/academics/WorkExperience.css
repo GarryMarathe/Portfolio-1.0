@@ -1,0 +1,42 @@
+/* workExperience.css */
+.work-experience-card {
+  display: flex;
+  /* width: 100%; */
+}
+
+.carousal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.leftsection {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 200px;
+  color: #fff;
+}
+
+.company-logo {
+  margin-bottom: 10px;
+}
+
+.company-logo img {
+
+  width: 50%;
+  max-width: 100%;
+  height: auto;
+}
+
+.rightsection {
+
+  width: 60%;
+  padding-left: 20px; /* Adjust padding as needed */
+  color: #fff;
+}
+
+/* Add any additional styling as needed */

@@ -6,7 +6,27 @@ import timelineElements from "./timelineElements";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import CustomVerticalTimelineElement from "./CustomVerticalTimelineElement";
-import WorkExperience from "./work.jsx"; 
+import WorkExperience from "./WorkExperience.jsx"; 
+
+
+const internshipsData = [
+  {
+    companyLogo: '/logos/school.jpg',
+    companyName: 'TCR Innovation',
+    jobRole: 'Frontend Web Developer Intern',
+    internshipDuration: 'July 2022 - September 2022',
+    projectTitle: 'Book Hub',
+    projectDescription: 'Developed web development projects.',
+  },
+  {
+    companyLogo: '/logos/school1.jpg',
+    companyName: 'YBI Foundation',
+    jobRole: 'Data Science Intern',
+    internshipDuration: 'March 2023 - April 2023',
+    projectTitle: 'Data Science Models',
+    projectDescription: 'Developed data science projects.',
+  },
+];
 
 const Academics = () => {
   const [page, setPage] = useState('education');
@@ -102,7 +122,7 @@ const Academics = () => {
 
         {page === 'work-experience' && (
           <div className="work-section">
-          <WorkExperience />
+          <WorkExperience workData={internshipsData} />
         </div>
         )}
       </div>
