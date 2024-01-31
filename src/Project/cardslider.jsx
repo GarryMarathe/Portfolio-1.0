@@ -2,14 +2,13 @@
 
 import React, { useState } from 'react';
 import './cardslider.css'; // Import the corresponding CSS for the card slider
-import { FaGithub, FaLink } from 'react-icons/fa'; // Import icons from Font Awesome
+import { FaGithub, FaGlobe } from 'react-icons/fa'; // Import icons from Font Awesome
 
 const CardSlider = () => {
   // Dummy data (replace with your actual data)
   const items = [
     {
-      imgSrc: '/logos/img1.jpg',
-      author: 'LUNDEV',
+      imgSrc: '/logos/img1.png',
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
@@ -17,8 +16,7 @@ const CardSlider = () => {
       websiteLink: 'https://www.project1.com',
     },
     {
-      imgSrc: '/logos/img2.jpg',
-      author: 'LUNDEV',
+      imgSrc: '/logos/img2.png',
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
@@ -26,8 +24,7 @@ const CardSlider = () => {
       websiteLink: 'https://www.project2.com',
     },
     {
-      imgSrc: '/logos/img3.jpg',
-      author: 'LUNDEV',
+      imgSrc: '/logos/img3.png',
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
@@ -55,7 +52,6 @@ const CardSlider = () => {
           <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
             <img src={item.imgSrc} alt={`Slide ${index + 1}`} />
             <div className="content">
-              <div className="author">{item.author}</div>
               <div className="title">{item.title}</div>
               <div className="topic">{item.topic}</div>
               <div className="des">{item.description}</div>
@@ -64,7 +60,7 @@ const CardSlider = () => {
                   <FaGithub />
                 </a>
                 <a href={item.websiteLink} target="_blank" rel="noopener noreferrer">
-                  <FaLink />
+                  <FaGlobe />
                 </a>
               </div>
             </div>
