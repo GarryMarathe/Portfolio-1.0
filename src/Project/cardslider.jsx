@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import './cardslider.css'; // Import the corresponding CSS for the card slider
+import { FaGithub, FaLink } from 'react-icons/fa'; // Import icons from Font Awesome
 
 const CardSlider = () => {
   // Dummy data (replace with your actual data)
@@ -12,6 +13,8 @@ const CardSlider = () => {
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      githubLink: 'https://github.com/yourusername/project1',
+      websiteLink: 'https://www.project1.com',
     },
     {
       imgSrc: '/logos/img2.jpg',
@@ -19,6 +22,8 @@ const CardSlider = () => {
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      githubLink: 'https://github.com/yourusername/project2',
+      websiteLink: 'https://www.project2.com',
     },
     {
       imgSrc: '/logos/img3.jpg',
@@ -26,6 +31,8 @@ const CardSlider = () => {
       title: 'DESIGN SLIDER',
       topic: 'ANIMAL',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      githubLink: 'https://github.com/yourusername/project3',
+      websiteLink: 'https://www.project3.com',
     },
     // Add more items as needed
   ];
@@ -48,10 +55,18 @@ const CardSlider = () => {
           <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
             <img src={item.imgSrc} alt={`Slide ${index + 1}`} />
             <div className="content">
-              {/* <div className="author">{item.author}</div> */}
+              <div className="author">{item.author}</div>
               <div className="title">{item.title}</div>
               <div className="topic">{item.topic}</div>
               <div className="des">{item.description}</div>
+              <div className="links">
+                <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
+                  <FaGithub />
+                </a>
+                <a href={item.websiteLink} target="_blank" rel="noopener noreferrer">
+                  <FaLink />
+                </a>
+              </div>
             </div>
           </div>
         ))}
@@ -64,7 +79,6 @@ const CardSlider = () => {
             <img src={item.imgSrc} alt={`Thumbnail ${index + 1}`} />
             <div className="content">
               <div className="title">Name Slider</div>
-              {/* <div className="description">Description</div> */}
             </div>
           </div>
         ))}
