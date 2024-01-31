@@ -1,0 +1,239 @@
+/* src/project/CardSlider/CardSlider.css */
+
+.card-slider {
+    height: 80vh;
+    margin-top: 30px;
+    width: 80vw;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+  }
+  
+  .card-slider .list {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .card-slider .list .item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .card-slider .list .item.active {
+    opacity: 1;
+  }
+  
+  .card-slider .list .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .card-slider .list .item .content {
+    position: absolute;
+    top: 20%;
+    width: 1140px;
+    max-width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-right: 30%;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 5px 10px #0004;
+  }
+  
+  .card-slider .list .item .author {
+    font-weight: bold;
+    letter-spacing: 10px;
+  }
+  
+  .card-slider .list .item .title,
+  .card-slider .list .item .topic {
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.3em;
+  }
+
+  .des {
+    font-size: 20px;
+    line-height: 1.3em;
+    padding-top: 10px;
+  }
+  
+  .card-slider .list .item .topic {
+    color: #f1683a;
+  }
+  
+  .card-slider .list .item .buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 130px);
+    grid-template-rows: 40px;
+    gap: 5px;
+    margin-top: 20px;
+  }
+  
+  .card-slider .list .item .buttons button {
+    border: none;
+    background-color: #eee;
+    letter-spacing: 3px;
+    font-family: 'Poppins';
+    font-weight: 500;
+  }
+  
+  .card-slider .list .item .buttons button:nth-child(2) {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #eee;
+  }
+  
+  .card-slider .thumbnail {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: max-content;
+    z-index: 100;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .card-slider .thumbnail .item {
+    width: 150px;
+    height: 220px;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  .card-slider .thumbnail .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .card-slider .thumbnail .item .content {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  
+  .card-slider .thumbnail .item .content .title {
+    font-weight: 500;
+  }
+  
+  .card-slider .thumbnail .item .content .description {
+    font-weight: 300;
+  }
+  
+  .card-slider .arrows {
+    position: absolute;
+    top: 90%;
+    right: 52%;
+    z-index: 100;
+    width: 300px;
+    max-width: 30%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .card-slider .arrows button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #eee4;
+    border: none;
+    color: #fff;
+    font-family: 'monospace';
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  
+  .card-slider .arrows button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .card-slider .time {
+    position: absolute;
+    z-index: 1000;
+    width: 0%;
+    height: 3px;
+    background-color: #f1683a;
+    left: 0;
+    top: 0;
+  }
+  
+  .card-slider.next .time,
+  .card-slider.prev .time {
+    animation: runningTime 3s linear 1 forwards;
+  }
+  
+  @keyframes runningTime {
+    from {
+      width: 100%;
+    }
+    to {
+      width: 0;
+    }
+  }
+  
+  .card-slider.next .thumbnail,
+  .card-slider.prev .thumbnail {
+    animation: effectNext 0.5s linear 1 forwards;
+  }
+  
+  @keyframes effectNext {
+    from {
+      transform: translateX(150px);
+    }
+  }
+  
+  .card-slider.prev .list .item img {
+    z-index: 100;
+  }
+  
+  .card-slider.prev .thumbnail .item:nth-child(1) {
+    overflow: hidden;
+    opacity: 0;
+    animation: showThumbnail 0.5s linear 1 forwards;
+  }
+  
+  .card-slider.next .arrows button,
+  .card-slider.prev .arrows button {
+    pointer-events: none;
+  }
+  
+  .card-slider.prev .list .item .content .author,
+  .card-slider.prev .list .item .content .title,
+  .card-slider.prev .list .item .content .topic,
+  .card-slider.prev .list .item .content .des,
+  .card-slider.prev .list .item .content .buttons {
+    animation: contentOut 1.5s linear 1 forwards !important;
+  }
+  
+  @keyframes contentOut {
+    to {
+      transform: translateY(-150px);
+      filter: blur(20px);
+      opacity: 0;
+    }
+  }
+  
+  @media screen and (max-width: 678px) {
+    .card-slider .list .item .content {
+      padding-right: 0;
+    }
+    .card-slider .list .item .content .title {
+      font-size: 30px;
+    }
+  }
+  
+  /* Add the rest of the styles from the provided CardSlider.css file */
+  /* ... */
+  
