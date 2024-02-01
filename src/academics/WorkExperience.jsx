@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import './WorkExperience.css'; // Make sure to import your CSS file
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCertificate } from '@fortawesome/free-solid-svg-icons';
+import { FaCertificate } from 'react-icons/fa';
+
 
 const jobData = [
   {
@@ -7,21 +11,27 @@ const jobData = [
     title: 'Job Title 1',
     company:' TCR Innovation ',
     description: 'Description for Job 1 goes here.',
+    timeline: 'July 2022 - Sept 2022 ',
     image: './logos/image.jpg',
+    certificate: 'https://www.project3.com',
   },
   {
     id: 2,
     title: 'Job Title 2',
     company:' TCR Innovation ',
     description: 'Description for Job 2 goes here.',
+    timeline: 'July 2022 - Sept 2022 ',
     image: './logos/image.jpg',
+    certificate: 'https://www.project3.com',
   },
   {
     id: 3,
     title: 'Job Title 3',
     company:' TCR Innovation ',
     description: 'Description for Job 3 goes here.',
+    timeline: 'July 2022 - Sept 2022 ',
     image: './logos/image.jpg',
+    certificate: 'https://www.project3.com',
   },
 
 ];
@@ -50,6 +60,8 @@ const WorkExperience = () => {
                 <h1 className='title'>{job.title}</h1>
                 <h2 className='company'>{job.company}</h2>
                 <p className='des'>{job.description}</p>
+                <h4 className='timeline'>{job.timeline}</h4>
+                
               </div>
             </div>
           ))}
