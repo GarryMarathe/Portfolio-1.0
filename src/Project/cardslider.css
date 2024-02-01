@@ -1,3 +1,4 @@
+/* Card Slider Container */
 .card-slider {
     height: 80vh;
     margin-top: 30px;
@@ -7,11 +8,13 @@
     border-radius: 20px;
 }
 
+/* Slider List Container */
 .card-slider .list {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
+/* Individual Item in the Slider List */
 .card-slider .list .item {
     width: 100%;
     height: 100%;
@@ -21,10 +24,12 @@
     transition: opacity 0.5s ease-in-out;
 }
 
+/* Active Item in the Slider List */
 .card-slider .list .item.active {
     opacity: 1;
 }
 
+/* Image in Each Slider Item */
 .card-slider .list .item img {
     width: 100%;
     height: 100%;
@@ -32,6 +37,7 @@
     opacity: 0.4;
 }
 
+/* Content Overlay in Each Slider Item */
 .card-slider .list .item .content {
     position: absolute;
     top: 20%;
@@ -45,7 +51,7 @@
     text-shadow: 0 5px 10px #0004;
 }
 
-
+/* Title in Each Slider Item */
 .card-slider .list .item .title {
     font-size: 40px;
     font-weight: bold;
@@ -53,25 +59,24 @@
     color: orangered;
 }
 
+/* Topic in Each Slider Item */
 .card-slider .list .item .topic {
-
     font-size: 20px;
     font-weight: 500;
     line-height: 1.7em;
     color: #fff;
     padding-top: 10px;
-
-    
 }
 
 
+/* Description in Each Slider Item */
 .des {
-    font-size: 20px;
-    line-height: 1.3em;
-    padding-top: 10px;
+    font-size: 16px;
+    line-height: 1.6em;
+    padding-top: 5px;
 }
 
-
+/* Links Container in Each Slider Item */
 .card-slider .list .item .links {
     position: absolute;
     top: 55vh;
@@ -81,6 +86,7 @@
     align-items: center;
 }
 
+/* Links in Each Slider Item */
 .card-slider .list .item .links a {
     color: #fff;
     font-size: 34px;
@@ -92,7 +98,6 @@
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    /* transition: background-color 0.3s; */
 }
 
 .card-slider .list .item .links a:hover {
@@ -100,8 +105,7 @@
     color: #000;
 }
 
-
-/* thumbail */
+/* Thumbnail Container */
 .thumbnail {
     position: absolute;
     bottom: 25px;
@@ -111,31 +115,33 @@
     display: flex;
     gap: 20px;
     cursor: pointer;
-    transition: transform 0.5s ease-in-out; /* Added transition for smooth transformation */
+    transition: transform 0.5s ease-in-out;
 }
 
+/* Individual Thumbnail Item */
 .thumbnail .item {
     width: 160px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
-    transition: transform 0.5s ease-in-out; 
-    opacity: 0.7;
+    transition: transform 0.5s ease-in-out;
+    opacity: 0.6;
 }
 
+/* Thumbnail Image */
 .thumbnail .item img {
     width: 100%;
     height: 100%;
     object-fit: fill;
     border-radius: 20px;
-    /* opacity: 0.7; */
 }
 
+/* Active Thumbnail Item */
 .thumbnail .item.active {
-    opacity: 1; 
+    opacity: 1;
 }
 
-
+/* Thumbnail Content Overlay */
 .thumbnail .item .content {
     position: absolute;
     bottom: 10px;
@@ -143,6 +149,7 @@
     right: 10px;
 }
 
+/* Thumbnail Title */
 .thumbnail .item .content .title {
     font-size: 20px;
     font-family: 'Poppins';
@@ -160,8 +167,7 @@
     transform: translateX(-100%);
 }
 
-
-/* arrows */
+/* Navigation Arrows */
 .arrows {
     position: absolute;
     top: 90%;
@@ -191,12 +197,11 @@
     cursor: pointer;
 }
 
-/* animation */
+/* Animation for the first item */
 .card-slider .list .item:nth-child(1) {
     z-index: 1;
 }
 
-/* animation text in the first item */
 .card-slider .list .item:nth-child(1) .content .author,
 .card-slider .list .item:nth-child(1) .content .title,
 .card-slider .list .item:nth-child(1) .content .topic,
@@ -206,9 +211,10 @@
     transform: translateY(50px);
     filter: blur(20px);
     opacity: 0;
-    animation: showContent 0.5s 1s linear 1 forwards;
+    animation: showContent 0.2s 1s linear 1 forwards;
 }
 
+/* Animation Keyframes */
 @keyframes showContent {
     to {
         transform: translateY(0px);
@@ -233,7 +239,6 @@
     animation-delay: 1.8s !important;
 }
 
-/* create animation when next click */
 .card-slider.next .list .item:nth-child(1) img {
     width: 150px;
     height: 220px;
@@ -280,7 +285,7 @@
     }
 }
 
-/* running time */
+
 .card-slider .time {
     position: absolute;
     z-index: 1000;
@@ -293,7 +298,7 @@
 
 .card-slider.next .time,
 .card-slider.prev .time {
-    animation: runningTime 3s linear 1 forwards;
+    animation: runningTime 2s linear 1 forwards;
 }
 
 @keyframes runningTime {
@@ -305,7 +310,7 @@
     }
 }
 
-/* prev click */
+
 .card-slider.prev .list .item:nth-child(2) {
     z-index: 2;
 }
@@ -344,7 +349,7 @@
 .card-slider.prev .list .item .content .des,
 .card-slider.prev .list .item .content .buttons,
 .card-slider.prev .list .item .links {
-    animation: contentOut 1.5s linear 1 forwards !important;
+    animation: contentOut 1s linear 1 forwards !important;
 }
 
 @keyframes contentOut {

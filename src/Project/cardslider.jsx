@@ -10,7 +10,7 @@ const CardSlider = () => {
       imgSrc: '/logos/img1.png',
       title: 'BOOKHUB',
       topic: 'A Book Recommendation Website',
-      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      description: 'Developed an innovative real-time visual dashboard that leverages cutting-edge technologies such as ReactJS, CSS, WebSocket, and ChartJS to provide dynamic and captivating graphical representations of the stock market and cryptocurrency data',
       githubLink: 'https://github.com/yourusername/project1',
       websiteLink: 'https://www.project1.com',
     },
@@ -79,7 +79,7 @@ const CardSlider = () => {
       runTimeOut = setTimeout(() => {
         carouselDom.classList.remove('prev');
         carouselDom.classList.remove('next');
-      }, 400);
+      }, 300);
     }
   }, []);
 
