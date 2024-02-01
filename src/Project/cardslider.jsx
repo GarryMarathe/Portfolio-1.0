@@ -100,8 +100,8 @@ const CardSlider = () => {
             <img src={item.imgSrc} alt={`Slide ${index + 1}`} />
             <div className="content">
               <div className="title">{item.title}</div>
-              {/* <div className="topic">{item.topic}</div> */}
-              {/* <div className="des">{item.description}</div> */}
+              <div className="topic">{item.topic}</div>
+              <div className="des">{item.description}</div>
               <div className="links">
                 <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
                   <FaGithub />
