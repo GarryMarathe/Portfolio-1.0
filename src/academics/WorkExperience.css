@@ -4,14 +4,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
+  height: 70vh;
   background-color: #030b0d;
+  margin: 40px;
+  
 }
 
 .carousel {
-  width: 80%; /* Adjust as needed */
+  width: 78%; /* Adjust as needed */
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .slider {
@@ -20,8 +22,8 @@
 }
 
 .card {
-  width: 30vw; /* Adjust as needed */
-  aspect-ratio: 1 / 0.7;
+  width: 40vw; /* Adjust as needed */
+  /* aspect-ratio: 1 / 0.7; */
   border-radius: 8px;
   position: relative;
   cursor: pointer;
@@ -75,13 +77,15 @@
   text-align: center;
 }
 
-.content h2,
-.content p {
+.content h1,
+.content p,
+.content h2{
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
 
-.content h2 {
+.content h1 , 
+.content h2{
   margin-bottom: 12px;
   transform: scale(0.7);
 }
@@ -93,7 +97,8 @@
   transform: translateY(50%);
 }
 
-.card:hover .content h2 {
+.card:hover .content h1 , 
+.card:hover .content h2{
   transform: scale(1);
   opacity: 1;
 }
@@ -103,7 +108,7 @@
   transform: translateY(0);
 }
 
-.arrow {
+/* .button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -112,7 +117,7 @@
   background: none;
   border: none;
   cursor: pointer;
-}
+} */
 
 .prev {
   left: 10px;

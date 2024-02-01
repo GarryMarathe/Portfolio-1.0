@@ -5,18 +5,21 @@ const jobData = [
   {
     id: 1,
     title: 'Job Title 1',
+    company:' TCR Innovation ',
     description: 'Description for Job 1 goes here.',
     image: './logos/image.jpg',
   },
   {
     id: 2,
     title: 'Job Title 2',
+    company:' TCR Innovation ',
     description: 'Description for Job 2 goes here.',
     image: './logos/image.jpg',
   },
   {
     id: 3,
     title: 'Job Title 3',
+    company:' TCR Innovation ',
     description: 'Description for Job 3 goes here.',
     image: './logos/image.jpg',
   },
@@ -44,14 +47,15 @@ const WorkExperience = () => {
                 <img src={job.image} alt={`Work Experience ${job.id}`} />
               </div>
               <div className="content">
-                <h2>{job.title}</h2>
-                <p>{job.description}</p>
+                <h1 className='title'>{job.title}</h1>
+                <h2 className='company'>{job.company}</h2>
+                <p className='des'>{job.description}</p>
               </div>
             </div>
           ))}
         </div>
-        <button className="arrow prev" onClick={handlePrev}>&lt;</button>
-        <button className="arrow next" onClick={handleNext}>&gt;</button>
+        {/* <button className="arrow prev" onClick={handlePrev}>&lt;</button>
+        <button className="arrow next" onClick={handleNext}>&gt;</button> */}
       </div>
     </div>
   );
