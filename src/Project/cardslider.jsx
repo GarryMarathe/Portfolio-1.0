@@ -23,9 +23,18 @@ const CardSlider = () => {
       websiteLink: 'https://www.project2.com',
     },
     {
+      imgSrc: '/logos/img4.png',
+      title: 'Bank Churn Customer Prediction',
+      topic: 'Predicting the churn rate of customers in a bank',
+      description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
+      githubLink: 'https://github.com/yourusername/project3',
+      websiteLink: 'https://www.project3.com',
+    },
+
+    {
       imgSrc: '/logos/img3.png',
-      title: 'AGRO MANAGEMENT',
-      topic: 'Import and Export of Agricultural Products Management System',
+      title: 'Sweet Junction',
+      topic: 'One Stop for all your sweet cravings',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       githubLink: 'https://github.com/yourusername/project3',
       websiteLink: 'https://www.project3.com',
@@ -91,8 +100,8 @@ const CardSlider = () => {
             <img src={item.imgSrc} alt={`Slide ${index + 1}`} />
             <div className="content">
               <div className="title">{item.title}</div>
-              <div className="topic">{item.topic}</div>
-              <div className="des">{item.description}</div>
+              {/* <div className="topic">{item.topic}</div> */}
+              {/* <div className="des">{item.description}</div> */}
               <div className="links">
                 <a href={item.githubLink} target="_blank" rel="noopener noreferrer">
                   <FaGithub />
@@ -111,7 +120,7 @@ const CardSlider = () => {
           <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
             <img src={item.imgSrc} alt={`Thumbnail ${index + 1}`} />
             <div className="content">
-              <div className="title">{item.title}</div>
+              {/* <div className="title">{item.title}</div> */}
             </div>
           </div>
         ))}

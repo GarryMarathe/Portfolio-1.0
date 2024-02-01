@@ -1,46 +1,58 @@
 import React, { useState } from 'react';
-import './WorkExperience.css'; // Import your CSS file
+import './WorkExperience.css'; // Make sure to import your CSS file
 
-const WorkExperience = ({ workData }) => {
+const jobData = [
+  {
+    id: 1,
+    title: 'Job Title 1',
+    description: 'Description for Job 1 goes here.',
+    image: './logos/image.jpg',
+  },
+  {
+    id: 2,
+    title: 'Job Title 2',
+    description: 'Description for Job 2 goes here.',
+    image: './logos/image.jpg',
+  },
+  {
+    id: 3,
+    title: 'Job Title 3',
+    description: 'Description for Job 3 goes here.',
+    image: './logos/image.jpg',
+  },
+
+];
+
+const WorkExperience = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % workData.length);
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === 0 ? jobData.length - 1 : prevIndex - 1));
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + workData.length) % workData.length);
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex === jobData.length - 1 ? 0 : prevIndex + 1));
   };
 
   return (
-    <div className="work-carousel">
-      <div className="work-experience-card">
-        {/* Left Section */}
-        <div className="leftsection">
-          <div className="company-logo">
-            <img src={workData[currentIndex].companyLogo} alt={`${workData[currentIndex].companyName} Logo`} />
-          </div>
-          <div className="company-info">
-            <h3 className="company-name">{workData[currentIndex].companyName}</h3>
-            <p className="job-role">{workData[currentIndex].jobRole}</p>
-            <p className="internship-duration">{workData[currentIndex].internshipDuration}</p>
-          </div>
+    <div className="work-section">
+      <div className="carousel">
+        <div className="slider" style={{ transform: `translateX(-${currentIndex * (100 / jobData.length)}%)` }}>
+          {jobData.map((job) => (
+            <div className="card" key={job.id}>
+              <div className="image-box">
+                <img src={job.image} alt={`Work Experience ${job.id}`} />
+              </div>
+              <div className="content">
+                <h2>{job.title}</h2>
+                <p>{job.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
-
-        {/* Right Section */}
-        <div className="rightsection">
-          <h3 className="project-title">{workData[currentIndex].projectTitle}</h3>
-          <p className="project-description">{workData[currentIndex].projectDescription}</p>
-        </div>
+        <button className="arrow prev" onClick={handlePrev}>&lt;</button>
+        <button className="arrow next" onClick={handleNext}>&gt;</button>
       </div>
-
-      {/* Navigation Buttons */}
-      <button className="prev-button" onClick={prevSlide}>
-        Prev
-      </button>
-      <button className="next-button" onClick={nextSlide}>
-        Next
-      </button>
     </div>
   );
 };

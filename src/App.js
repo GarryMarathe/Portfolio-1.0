@@ -12,7 +12,7 @@ function App() {
     <Top />
     <AboutSection />
     <Skills />
-    {/* <Projects /> */}
+    <Projects />
     <Academics />
     <Form />
 
