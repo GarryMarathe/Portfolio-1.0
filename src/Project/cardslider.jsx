@@ -1,37 +1,35 @@
-// src/project/CardSlider.jsx
+// src/Project/CardSlider.jsx
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './cardslider.css'; // Import the corresponding CSS for the card slider
 import { FaGithub, FaGlobe } from 'react-icons/fa'; // Import icons from Font Awesome
 
 const CardSlider = () => {
-  // Dummy data (replace with your actual data)
   const items = [
     {
       imgSrc: '/logos/img1.png',
-      title: 'DESIGN SLIDER',
-      topic: 'ANIMAL',
+      title: 'BOOKHUB',
+      topic: 'A Book Recommendation Website',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       githubLink: 'https://github.com/yourusername/project1',
       websiteLink: 'https://www.project1.com',
     },
     {
       imgSrc: '/logos/img2.png',
-      title: 'DESIGN SLIDER',
-      topic: 'ANIMAL',
+      title: 'VISUALMASTER',
+      topic: 'A real-time financial market visual dashboard ',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       githubLink: 'https://github.com/yourusername/project2',
       websiteLink: 'https://www.project2.com',
     },
     {
       imgSrc: '/logos/img3.png',
-      title: 'DESIGN SLIDER',
-      topic: 'ANIMAL',
+      title: 'AGRO MANAGEMENT',
+      topic: 'Import and Export of Agricultural Products Management System',
       description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit...',
       githubLink: 'https://github.com/yourusername/project3',
       websiteLink: 'https://www.project3.com',
     },
-    // Add more items as needed
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -44,9 +42,49 @@ const CardSlider = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + items.length) % items.length);
   };
 
+  useEffect(() => {
+    let nextDom = document.getElementById('next');
+    let prevDom = document.getElementById('prev');
+
+    let carouselDom = document.querySelector('.card-slider');
+    let SliderDom = carouselDom.querySelector('.list');
+    let thumbnailBorderDom = carouselDom.querySelector('.thumbnail');
+
+    thumbnailBorderDom.appendChild(thumbnailBorderDom.firstElementChild);
+
+    let runTimeOut;
+
+    nextDom.onclick = function () {
+      showSlider('next');
+    };
+
+    prevDom.onclick = function () {
+      showSlider('prev');
+    };
+
+    function showSlider(type) {
+      let thumbnailItemsDom = document.querySelectorAll('.thumbnail .item');
+
+      if (type === 'next') {
+        SliderDom.appendChild(SliderDom.firstElementChild);
+        thumbnailBorderDom.appendChild(thumbnailBorderDom.firstElementChild);
+        carouselDom.classList.add('next');
+      } else {
+        SliderDom.prepend(SliderDom.lastElementChild);
+        thumbnailBorderDom.prepend(thumbnailBorderDom.lastElementChild);
+        carouselDom.classList.add('prev');
+      }
+
+      clearTimeout(runTimeOut);
+      runTimeOut = setTimeout(() => {
+        carouselDom.classList.remove('prev');
+        carouselDom.classList.remove('next');
+      }, 400);
+    }
+  }, []);
+
   return (
     <div className="card-slider">
-      {/* List item */}
       <div className="list">
         {items.map((item, index) => (
           <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
@@ -68,25 +106,22 @@ const CardSlider = () => {
         ))}
       </div>
 
-      {/* List thumbnail */}
       <div className="thumbnail">
         {items.map((item, index) => (
-          <div key={index} className="item">
+          <div key={index} className={`item ${index === currentIndex ? 'active' : ''}`}>
             <img src={item.imgSrc} alt={`Thumbnail ${index + 1}`} />
             <div className="content">
-              <div className="title">Name Slider</div>
+              <div className="title">{item.title}</div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Next/Prev buttons */}
       <div className="arrows">
         <button id="prev" onClick={handlePrev}>&lt;</button>
         <button id="next" onClick={handleNext}>&gt;</button>
       </div>
 
-      {/* Running time indicator */}
       <div className="time"></div>
     </div>
   );

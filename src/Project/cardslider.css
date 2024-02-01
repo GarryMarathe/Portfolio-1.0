@@ -29,7 +29,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
 .card-slider .list .item .content {
@@ -46,12 +46,24 @@
 }
 
 
-.card-slider .list .item .title,
-.card-slider .list .item .topic {
+.card-slider .list .item .title {
     font-size: 40px;
     font-weight: bold;
     line-height: 1.3em;
+    color: orangered;
 }
+
+.card-slider .list .item .topic {
+
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em;
+    color: #fff;
+    padding-top: 10px;
+
+    
+}
+
 
 .des {
     font-size: 20px;
@@ -59,31 +71,6 @@
     padding-top: 10px;
 }
 
-.card-slider .list .item .topic {
-    color: #f1683a;
-}
-
-.card-slider .list .item .buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 130px);
-    grid-template-rows: 40px;
-    gap: 5px;
-    margin-top: 20px;
-}
-
-.card-slider .list .item .buttons button {
-    border: none;
-    background-color: #eee;
-    letter-spacing: 3px;
-    font-family: 'Poppins';
-    font-weight: 500;
-}
-
-.card-slider .list .item .buttons button:nth-child(2) {
-    background-color: transparent;
-    border: 1px solid #fff;
-    color: #eee;
-}
 
 .card-slider .list .item .links {
     position: absolute;
@@ -105,7 +92,7 @@
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
 }
 
 .card-slider .list .item .links a:hover {
@@ -124,26 +111,32 @@
     display: flex;
     gap: 20px;
     cursor: pointer;
-    
+    transition: transform 0.5s ease-in-out; /* Added transition for smooth transformation */
 }
 
 .thumbnail .item {
-    width: 150px;
+    width: 160px;
     height: 220px;
     flex-shrink: 0;
     position: relative;
+    transition: transform 0.5s ease-in-out; 
+    opacity: 0.7;
 }
 
 .thumbnail .item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     border-radius: 20px;
     /* opacity: 0.7; */
 }
 
+.thumbnail .item.active {
+    opacity: 1; 
+}
+
+
 .thumbnail .item .content {
-    
     position: absolute;
     bottom: 10px;
     left: 10px;
@@ -151,11 +144,20 @@
 }
 
 .thumbnail .item .content .title {
-    
     font-size: 20px;
     font-family: 'Poppins';
     font-weight: bold;
     color: white;
+    text-align: center;
+}
+
+/* Animation for thumbnail transformation */
+.card-slider.next .thumbnail .item {
+    transform: translateX(100%);
+}
+
+.card-slider.prev .thumbnail .item {
+    transform: translateX(-100%);
 }
 
 
