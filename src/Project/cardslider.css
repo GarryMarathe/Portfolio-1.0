@@ -55,7 +55,7 @@
 
 /* Title in Each Slider Item */
 .card-slider .list .item .title {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 1.3em;
     color: rgb(245, 104, 53);
@@ -84,8 +84,8 @@
 /* Links Container in Each Slider Item */
 .card-slider .list .item .links {
     position: absolute;
-    top: 59vh;
-    left: 10px;
+    top: 56vh;
+    left: -80px;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -114,7 +114,7 @@
 .thumbnail {
     position: absolute;
     bottom: 25px;
-    left: 50%;
+    left: 52%;
     width: max-content;
     z-index: 1;
     display: flex;
@@ -125,8 +125,8 @@
 
 /* Individual Thumbnail Item */
 .thumbnail .item {
-    width: 160px;
-    height: 220px;
+    width: 180px;
+    height: 200px;
     flex-shrink: 0;
     position: relative;
     transition: transform 0.5s ease-in-out;
@@ -175,8 +175,8 @@
 /* Navigation Arrows */
 .arrows {
     position: absolute;
-    top: 89%;
-    right: 48%;
+    top: 85%;
+    right: 55%;
     z-index: 1;
     width: 20vw;
     max-width: 70%;
