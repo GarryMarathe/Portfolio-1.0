@@ -42,10 +42,10 @@
 /* Content Overlay in Each Slider Item */
 .card-slider .list .item .content {
     position: absolute;
-    top: 15%;
+    top: 10%;
     width: 1140px;
     max-width: 80%;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     padding-right: 30%;
     box-sizing: border-box;
@@ -55,7 +55,7 @@
 
 /* Title in Each Slider Item */
 .card-slider .list .item .title {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 1.3em;
     color: rgb(245, 104, 53);
@@ -84,8 +84,8 @@
 /* Links Container in Each Slider Item */
 .card-slider .list .item .links {
     position: absolute;
-    top: 56vh;
-    left: -80px;
+    top: 60vh;
+    left: 5%;
     display: flex;
     gap: 20px;
     align-items: center;
@@ -176,7 +176,7 @@
 .arrows {
     position: absolute;
     top: 85%;
-    right: 55%;
+    right:45%;
     z-index: 1;
     width: 20vw;
     max-width: 70%;
