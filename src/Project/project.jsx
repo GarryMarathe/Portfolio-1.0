@@ -8,7 +8,7 @@ import './project.css';
 
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id='project'>
       {/* Header section */}
       <div className="projects-header">
         <FontAwesomeIcon icon={faProjectDiagram} size="3x" className="projects-icon" />

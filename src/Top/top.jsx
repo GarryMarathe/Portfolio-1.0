@@ -61,7 +61,7 @@ const Top = () => {
         <a href="#skills" onClick={toggleMenu}>
           Skills
         </a>
-        <a href="/" onClick={toggleMenu}>
+        <a href="#project" onClick={toggleMenu}>
           Projects
         </a>
         <a href="#academics" onClick={toggleMenu}>
