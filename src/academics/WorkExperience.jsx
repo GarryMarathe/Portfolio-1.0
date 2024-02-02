@@ -12,8 +12,8 @@ const jobData = [
     company: ' TCR Innovation-India (Remote) ',
     description: 'Gained practical experience in developing responsive and user-friendly web interfaces. Implemented UI designs, optimized website performance, and enhanced user experience using HTML, CSS, and JavaScript.',
     timeline: 'July 2022 - Sept 2022 ',
-    image: './logos/image.jpg',
-    certificate: 'https://www.project3.com',
+    image: './logos/tcr.jpg',
+    certificate: 'https://drive.google.com/file/d/1aydOf9vxs8YcJbwdH8_DyZzqCyi50rBl/view?usp=sharing',
   },
   {
     id: 2,
@@ -21,8 +21,8 @@ const jobData = [
     company: ' YBI Foundation-India (Remote)',
     description: 'Gained valuable experience and developed a strong foundation in data science while making a positive social impact. Worked on various projects, including Data Collection and preprocessing, Data Analysis, Predictive modeling, etc.',
     timeline: 'Mar 2023 - Apr 2023',
-    image: './logos/image.jpg',
-    certificate: 'https://www.project3.com',
+    image: './logos/ybi.jpg',
+    certificate: 'https://drive.google.com/file/d/1KBVelbQmbBSm0V043Mv3A_tVcAWRzC-V/view?usp=sharing',
   },
   {
     id: 3,
@@ -30,11 +30,13 @@ const jobData = [
     company: 'Oasis Infobyte-India(Remote)',
     description: 'Honed my skills in HTML, CSS, JavaScript, and Bootstrap, contributing to the creation of dynamic and responsive web interfaces. Gained valuable hands-on experience in crafting engaging UI/UX and optimizing website performance.',
     timeline: 'July 2022 - Sept 2022 ',
-    image: './logos/image.jpg',
-    certificate: 'https://www.project3.com',
+    image: './logos/oasis.jpeg',
+    certificate: 'https://drive.google.com/file/d/1awy_ybvYkxWRCRDeyPCnXk1AOJb8VmXN/view?usp=sharing',
   },
 
 ];
+
+
 
 const WorkExperience = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
