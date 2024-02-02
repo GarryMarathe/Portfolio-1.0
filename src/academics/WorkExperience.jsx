@@ -8,27 +8,27 @@ import { FaCertificate } from 'react-icons/fa';
 const jobData = [
   {
     id: 1,
-    title: 'Job Title 1',
-    company:' TCR Innovation ',
-    description: 'Description for Job 1 goes here.',
+    title: 'Front-End Web Developer Intern',
+    company: ' TCR Innovation-India (Remote) ',
+    description: 'Gained practical experience in developing responsive and user-friendly web interfaces. Implemented UI designs, optimized website performance, and enhanced user experience using HTML, CSS, and JavaScript.',
     timeline: 'July 2022 - Sept 2022 ',
     image: './logos/image.jpg',
     certificate: 'https://www.project3.com',
   },
   {
     id: 2,
-    title: 'Job Title 2',
-    company:' TCR Innovation ',
-    description: 'Description for Job 2 goes here.',
-    timeline: 'July 2022 - Sept 2022 ',
+    title: 'Data Science Intern',
+    company: ' YBI Foundation-India (Remote)',
+    description: 'Gained valuable experience and developed a strong foundation in data science while making a positive social impact. Worked on various projects, including Data Collection and preprocessing, Data Analysis, Predictive modeling, etc.',
+    timeline: 'Mar 2023 - Apr 2023',
     image: './logos/image.jpg',
     certificate: 'https://www.project3.com',
   },
   {
     id: 3,
-    title: 'Job Title 3',
-    company:' TCR Innovation ',
-    description: 'Description for Job 3 goes here.',
+    title: 'Front-End Web Developer Intern',
+    company: 'Oasis Infobyte-India(Remote)',
+    description: 'Honed my skills in HTML, CSS, JavaScript, and Bootstrap, contributing to the creation of dynamic and responsive web interfaces. Gained valuable hands-on experience in crafting engaging UI/UX and optimizing website performance.',
     timeline: 'July 2022 - Sept 2022 ',
     image: './logos/image.jpg',
     certificate: 'https://www.project3.com',
@@ -61,7 +61,13 @@ const WorkExperience = () => {
                 <h2 className='company'>{job.company}</h2>
                 <p className='des'>{job.description}</p>
                 <h4 className='timeline'>{job.timeline}</h4>
-                
+                <div className="certificate-button">
+                  <a href={job.certificate} target="_blank" rel="noopener noreferrer">
+                    <img src="/icons/certificate.png" alt="Certificate Icon" className="certificate-icon" />
+                    <span>Certificate</span>
+                  </a>
+                </div>
+
               </div>
             </div>
           ))}

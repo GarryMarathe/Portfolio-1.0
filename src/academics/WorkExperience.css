@@ -65,13 +65,13 @@
 
 .card:hover::after {
   opacity: 1;
-  inset: 20px;
+  inset: 15px;
 }
 
 .content {
   width: 80%;
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -80,16 +80,18 @@
 .content h1{
 
   color: white;
+  font-size: 24px;
 }
 
 .content h2{
   font-size: 18px;
-  color: #d1d1d1;
+  color: #fff;
 }
 
 .content h1,
 .content p,
-.content h2{
+.content h2,
+.content .certificate-button{
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
@@ -97,18 +99,21 @@
 .content h4{
 
   position: absolute;
-  top: -70%;
-  left: 35%;
+  top: -33%;
+  left: 30%;
   color: white;
   font-weight: lighter;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .content h1 , 
-.content h2{
-  margin-bottom: 12px;
+.content h2,
+.content .certificate-button{
+  /* margin-bottom: 12px; */
   transform: scale(0.7);
 }
+
+
 
 .content h4{
   transform: scale(0.7);
@@ -124,20 +129,15 @@
 }
 
 .card:hover .content h1 , 
-.card:hover .content h2{
+.card:hover .content h2,
+.card:hover .content h4,
+.card:hover .content p,
+.card:hover .content .certificate-button{
   transform: scale(1);
   opacity: 1;
 }
 
-.card:hover .content h4{
-  transform: scale(1);
-  opacity: 1;
-}
 
-.card:hover .content p {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 /* .button {
   position: absolute;
@@ -157,3 +157,38 @@
 .next {
   right: 10px;
 } */
+
+.certificate-button {
+  position: absolute;
+  top: -50px;
+  right: -20px;
+  display: flex;
+  align-items: center;
+  border: 2px solid orangered;
+  border-radius: 5px;
+  background-color: orangered;
+  padding: 5px 10px;
+}
+
+.certificate-icon {
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  padding-right: 5px;
+  
+}
+
+.certificate-button a {
+  text-decoration: none;
+  color: #d1d1d1;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.certificate-button span {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
+  
