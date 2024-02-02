@@ -1,5 +1,3 @@
-/* Import your font and global styles */
-
 .work-section {
   display: flex;
   justify-content: center;
@@ -7,13 +5,11 @@
   height: 70vh;
   background-color: #030b0d;
   margin: 40px;
-  
 }
 
 .carousel {
-  width: 78%; /* Adjust as needed */
+  width: 78%;
   overflow: hidden;
-  
 }
 
 .slider {
@@ -23,13 +19,11 @@
 }
 
 .card {
-  width: 40vw; /* Adjust as needed */
-  /* aspect-ratio: 1 / 0.7; */
+  width: 40vw;
   border-radius: 8px;
   position: relative;
   cursor: pointer;
   margin-right: 20px;
-  
 }
 
 .card:last-child {
@@ -87,10 +81,6 @@
   font-size: 24px;
 }
 
-
-
-
-
 .content h2{
   font-size: 18px;
   color: #fff;
@@ -99,13 +89,12 @@
 .content h1,
 .content p,
 .content h2,
-.content .certificate-button{
+.content .certificate-button {
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
 
 .content h4{
-
   position: absolute;
   top: -25%;
   left: 30%;
@@ -114,15 +103,11 @@
   font-size: 16px;
 }
 
-.content h1 , 
+.content h1, 
 .content h2,
-.content .certificate-button{
-  /* margin-bottom: 12px; */
+.content .certificate-button {
   transform: scale(0.7);
 }
-
-
-
 
 .content h4{
   transform: scale(0.7);
@@ -138,17 +123,14 @@
   padding: 0;
 }
 
-.card:hover .content h1 , 
+.card:hover .content h1, 
 .card:hover .content h2,
 .card:hover .content h4,
 .card:hover .content p,
-.card:hover .certificate-button{
+.card:hover .certificate-button {
   transform: scale(1);
   opacity: 1;
 }
-
-
-
 
 .certificate-button {
   z-index: 100;
@@ -164,10 +146,9 @@
 }
 
 .certificate-icon {
-  width: 20px; /* Adjust width as needed */
-  height: 20px; /* Adjust height as needed */
+  width: 20px;
+  height: 20px;
   padding-right: 5px;
-  
 }
 
 .certificate-button a {
@@ -184,29 +165,27 @@
 }
 
 @media screen and (max-width: 768px) {
-
   .work-section {
     height: 100%;
     display: flex;
     flex-direction: column;
   }
+  
   .carousel {
     width: 100%;
   }
 
   .card {
-    width: 80vw; /* Adjust as needed for smaller screens */
+    width: 80vw;
     margin-right: 10px;
     padding: 20px 0;
     height: 100vh;
-        
   }
 
   .slider {
     height: 80vh;
     display: flex;
     flex-direction: column;
-    /* padding: 20px 0; */
   }
 
   .content {
@@ -243,10 +222,8 @@
   }
   
   .certificate-icon {
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
-    /* padding-right: 5px; */
-    
+    width: 20px;
+    height: 20px;
   }
   
   .certificate-button a {
@@ -292,5 +269,4 @@
     opacity: 1;
     inset: 30px 10px;
   }
-
 }
