@@ -98,7 +98,8 @@
 
 .content h1,
 .content p,
-.content h2{
+.content h2,
+.content .certificate-button{
   opacity: 0;
   transition: 0.4s 0.2s ease;
 }
@@ -114,7 +115,8 @@
 }
 
 .content h1 , 
-.content h2{
+.content h2,
+.content .certificate-button{
   /* margin-bottom: 12px; */
   transform: scale(0.7);
 }
@@ -139,31 +141,14 @@
 .card:hover .content h1 , 
 .card:hover .content h2,
 .card:hover .content h4,
-.card:hover .content p{
+.card:hover .content p,
+.card:hover .certificate-button{
   transform: scale(1);
   opacity: 1;
 }
 
 
 
-/* .button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 24px;
-  color: white;
-  background: none;
-  border: none;
-  cursor: pointer;
-} */
-
-/* .prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
-} */
 
 .certificate-button {
   z-index: 100;
@@ -198,5 +183,114 @@
   font-weight: 500;
 }
 
+@media screen and (max-width: 768px) {
 
+  .work-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .carousel {
+    width: 100%;
+  }
+
+  .card {
+    width: 80vw; /* Adjust as needed for smaller screens */
+    margin-right: 10px;
+    padding: 20px 0;
+    height: 100vh;
+        
+  }
+
+  .slider {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 0; */
+  }
+
+  .content {
+    width: 100%;
+  }
+
+  .content h1 {
+    font-size: 20px;
+  }
+
+  .content h2 {
+    font-size: 16px;
+  } 
+
+  .content h4 {
+    font-size: 16px;
+    top: -30%;
+    left: 10%;
+  }
+
+  .content p {
+    font-size: 12px;
+    padding: 0 20px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+  }
+
+  .certificate-button {
+    top: -20%;
+    right: 5%;
+  }
   
+  .certificate-icon {
+    width: 20px; /* Adjust width as needed */
+    height: 20px; /* Adjust height as needed */
+    /* padding-right: 5px; */
+    
+  }
+  
+  .certificate-button a {
+    text-decoration: none;
+    color: #d1d1d1;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .certificate-button span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+    opacity: 0.8;
+    object-fit: fill;
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -100;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+  }
+
+  .card:hover img {
+    filter: grayscale(1) brightness(0.4);
+  }
+  
+  .card:hover::after {
+    opacity: 1;
+    inset: 30px 10px;
+  }
+
+}
