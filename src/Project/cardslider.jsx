@@ -42,6 +42,7 @@ const CardSlider = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
+  
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % items.length);

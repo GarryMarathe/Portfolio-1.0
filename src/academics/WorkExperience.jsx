@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
 import './WorkExperience.css'; // Make sure to import your CSS file
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCertificate } from '@fortawesome/free-solid-svg-icons';
-import { FaCertificate } from 'react-icons/fa';
 
 
 const jobData = [
@@ -40,13 +37,20 @@ const jobData = [
 
 const WorkExperience = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [expanded, setExpanded] = useState(false); // Add state for expansion
 
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => (prevIndex === 0 ? jobData.length - 1 : prevIndex - 1));
+    setExpanded(false); // Reset expansion when changing job
   };
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex === jobData.length - 1 ? 0 : prevIndex + 1));
+    setExpanded(false); // Reset expansion when changing job
+  };
+
+  const toggleExpansion = () => {
+    setExpanded(!expanded);
   };
 
   return (
@@ -61,7 +65,12 @@ const WorkExperience = () => {
               <div className="content">
                 <h1 className='title'>{job.title}</h1>
                 <h2 className='company'>{job.company}</h2>
-                <p className='des'>{job.description}</p>
+                <p className={`des ${expanded ? 'expanded' : ''}`}>
+                  {job.description}
+                  <span className="expand-btn" onClick={toggleExpansion}>
+                    {expanded ? 'Read Less' : 'Read More'}
+                  </span>
+                </p>
                 <h4 className='timeline'>{job.timeline}</h4>
                 <div className="certificate-button">
                   <a href={job.certificate} target="_blank" rel="noopener noreferrer">
